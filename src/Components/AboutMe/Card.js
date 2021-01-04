@@ -18,10 +18,6 @@ const StyledCard =styled.div`
   will-change: transform;
   border: 15px solid white;
 
-  @media (max-width: 768px) {
-  width: 360;
-  height: 450px;
-}
   
 }
 

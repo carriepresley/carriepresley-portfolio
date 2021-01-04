@@ -8,10 +8,11 @@ import styled from "styled-components";
 
 const StyledAboutMe =styled.div`
     padding: 0px;
-    margin: 5px 5px;
+    margin: 10px 10px;
 
-    .card-image {
-        text-align: center;   
+ 
+    #text-right{
+        margin: 20px 10px 10px 20px;
 
     }
 
@@ -20,12 +21,12 @@ const StyledAboutMe =styled.div`
 function AboutMe  (){
     return ( 
         <StyledAboutMe>
-        <Container fluid = {true}>
-        <Row className= "justify-content-center">
-            <Col className = "card-image" s = {12} md = {6} l = {6} xl = {3} >
+        <Container fluid ={true}>
+        <Row className= "justify-content-center" md ={12}>
+            <Col className = "d-flex justify-content-center" md = {6} xl = {4} >
             <Card/>
             </Col>
-            <Col className ="text-left" s = {12} md = {6} l= {6} xl = {8} >
+            <Col className ="d-flex justify-content-center" id= "text-right" md = {6} xl = {7} >
                 <AboutMeWords/>
            </Col>
         </Row>

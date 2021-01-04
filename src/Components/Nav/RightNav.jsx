@@ -14,7 +14,12 @@ const Ul = styled.ul`
     padding: 18px 10px;
   }
 
-
+  img:hover{
+    width: 120%;
+    height: auto;
+    transition: ease-in-out 0.4s;
+    opacity: 0.5;
+  }
 
 
   @media (max-width: 768px) {
