@@ -9,8 +9,25 @@ const Nav = styled.nav`
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count:1;
+  animation-fill-mode: forwards;
+
+  @keyframes fadeInAnimation {
+      0%{
+          opacity: 0;
+      }
+      100%{ 
+          opacity: 1;
+      }
+  }
+
+
   .logo {
     padding: 15px 0;
+    font-family: arial;
+    font-size: 24px;
+    letter-spacing: 1px;
   }
 `
 

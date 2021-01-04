@@ -1,15 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import GitHub from "./github.png";
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
+import LinkedIn from "./linkedin.png";
+import Twitter from "./twitter.png";
 
 
-  
+
 const Ul = styled.ul`
   list-style: none;
   display: flex;
@@ -19,32 +15,33 @@ const Ul = styled.ul`
   }
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: #0D2538;
+    background-color: whitesmoke;
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
     right: 0;
     height: 100vh;
-    width: 300px;
+    width: 100px;
     padding-top: 3.5rem;
-    transition: transform 0.3s ease-in-out;
     li {
       color: #fff;
+      margin-left: 33px;
     }
   }
 `;
 
 const RightNav = ({ open }) => {
   return (
-      <Router>
+      
     <Ul open={open}>
-      <li><img src ={GitHub} Link= "https://github.com/carriepresley" ></img></li>
-      <li>About Us</li>
-      <li>Contact Us</li>
-      <li>Sign In</li>
-      <li>Sign Up</li>
+      <li><a target="_blank" href="https://github.com/carriepresley"><img src={GitHub} alt= 'carrie presley github link'></img></a></li>
+
+      <li><a target="_blank" href="https://twitter.com/carriepresley15"><img src={Twitter} alt= 'carrie presley twitter link'></img></a></li>
+
+      <li><a target="_blank" href=""><img src={LinkedIn}></img></a></li>
+     
     </Ul>
-    </Router>
+    
   )
 }
 
