@@ -1,28 +1,36 @@
 import React from "react";
 import Card from "./Card";
-import {Container, Row, Col} from "react-bootstrap";
 import AboutMeWords from "./AboutMeWords";
+import { Container } from "react-bootstrap";
+import {Row} from "react-bootstrap";
+import {Col} from "react-bootstrap";
+import styled from "styled-components";
 
+const StyledAboutMe =styled.div`
+    padding: 0px;
+    margin: 5px 5px;
 
+    .card-image {
+        text-align: center;   
+
+    }
+
+`;
 
 function AboutMe  (){
     return ( 
-        <Container fluid='md'>
+        <StyledAboutMe>
+        <Container fluid = {true}>
         <Row className= "justify-content-center">
-            <Col md = {6}>
+            <Col className = "card-image" s = {12} md = {6} l = {6} xl = {3} >
             <Card/>
             </Col>
-            <Col md = {6}>
+            <Col className ="text-left" s = {12} md = {6} l= {6} xl = {8} >
                 <AboutMeWords/>
-            </Col>
-
+           </Col>
         </Row>
-       
-
-        </Container>
-        
-       
-          
+        </Container>  
+        </StyledAboutMe>  
     )
    
 }

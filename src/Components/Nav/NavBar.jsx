@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import Burger from './Burger';
+import "../../../src/index.css";
 
 const Nav = styled.nav`
-  width: 100%;
+  width: auto;
   height: 55px;
   border-bottom: 2px solid #f1f1f1;
-  padding: 0 20px;
+  margin: 30px;
   display: flex;
   justify-content: space-between;
   animation: fadeInAnimation ease 3s;
@@ -24,11 +25,12 @@ const Nav = styled.nav`
 
 
   .logo {
-    padding: 15px 0;
-    font-family: arial;
-    font-size: 24px;
+    padding: 0px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 33px;
     letter-spacing: 1px;
   }
+
 `
 
 const Navbar = () => {

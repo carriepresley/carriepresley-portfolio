@@ -17,12 +17,17 @@ const StyledCard =styled.div`
   transition: box-shadow 0.5s;
   will-change: transform;
   border: 15px solid white;
+
+  @media (max-width: 768px) {
+  width: 360;
+  height: 450px;
+}
+  
 }
 
 .card:hover {
   box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
 }
-
 
 
 `;

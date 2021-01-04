@@ -13,6 +13,10 @@ const Ul = styled.ul`
   li {
     padding: 18px 10px;
   }
+
+
+
+
   @media (max-width: 768px) {
     flex-flow: column nowrap;
     background-color: whitesmoke;
@@ -25,8 +29,9 @@ const Ul = styled.ul`
     padding-top: 3.5rem;
     li {
       color: #fff;
-      margin-left: 33px;
+      margin-left: 38px;
     }
+    
   }
 `;
 
@@ -34,7 +39,7 @@ const RightNav = ({ open }) => {
   return (
       
     <Ul open={open}>
-      <li><a target="_blank" href="https://github.com/carriepresley"><img src={GitHub} alt= 'carrie presley github link'></img></a></li>
+      <li><a target="_blank" href="https://github.com/carriepresley"><img src={GitHub} alt= 'carrie presley github link' ></img></a></li>
 
       <li><a target="_blank" href="https://twitter.com/carriepresley15"><img src={Twitter} alt= 'carrie presley twitter link'></img></a></li>
 
