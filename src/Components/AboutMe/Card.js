@@ -18,7 +18,9 @@ const StyledCard =styled.div`
   will-change: transform;
   border: 10px solid whitesmoke;
     
-
+  @media (max-width: 768px) {
+    z-index:-1;
+    margin-top: 50px;
   }
 }
 

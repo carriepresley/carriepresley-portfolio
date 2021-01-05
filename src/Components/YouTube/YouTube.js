@@ -14,7 +14,7 @@ const StyledAboutMe =styled.div`
     justify-content: center;
 
     h2{
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Lato', sans-serif;
     font-size: 30px;
     line-height: 50px;
     -webkit-font-smoothing: antialiased;

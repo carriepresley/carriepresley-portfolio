@@ -6,8 +6,7 @@ import "../../../src/index.css";
 const Nav = styled.nav`
   width: auto;
   height: 55px;
- 
-  margin: 30px;
+ border-bottom: solid .01px grey;
   display: flex;
   justify-content: space-between;
   animation: fadeInAnimation ease 3s;
@@ -25,10 +24,18 @@ const Nav = styled.nav`
 
 
   .logo {
-    padding: 0px 0px;
-    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0px;
+    font-family: 'Lato', sans-serif;
     font-size: 33px;
     letter-spacing: 1px;
+    margin-left: 20px;
+    
+    @media (max-width: 768px) {
+    display: flex;
+    font-size: 28px;
+   
+  }
+    
   }
 
 `

@@ -12,15 +12,16 @@ const Ul = styled.ul`
   flex-flow: row nowrap;
   li {
     padding: 18px 10px;
+    color: #fff;
+    margin-left: 38px;
+    cursor: pointer;
+
+  }
+  .social-li{
+    padding-right: 30px;
   }
 
-  img:hover{
-    width: 110%;
-    height: auto;
-    transition: ease-in-out 1.0s;
-  }
-
-
+  
   @media (max-width: 768px) {
     flex-flow: column nowrap;
     background-color: whitesmoke;
@@ -31,11 +32,9 @@ const Ul = styled.ul`
     height: 100vh;
     width: 100px;
     padding-top: 3.5rem;
-    li {
-      color: #fff;
-      margin-left: 38px;
-    }
-    
+
+  
+  
   }
 `;
 
@@ -44,15 +43,15 @@ const RightNav = ({ open }) => {
       
     <Ul open={open}>
 
-    <li><a target="_blank" href="https://twitter.com/carriepresley15"><img src={Twitter} alt= 'carrie presley twitter link'></img></a></li>
+    <li className = 'socials'><a target="_blank" href="https://twitter.com/carriepresley15" rel="noreferrer"><img src={Twitter} alt= 'carrie presley twitter link'></img></a></li>
 
-      <li><a target="_blank" href="https://www.instagram.com/carriepresley/"><img src={Insta} alt= 'carrie presley github link' ></img></a></li>
+      <li className = 'socials'><a target="_blank" href="https://www.instagram.com/carriepresley/" rel="noreferrer"><img src={Insta} alt= 'carrie presley github link' ></img></a></li>
 
-      <li><a target="_blank" href="https://www.linkedin.com/in/carriepresley/"><img src={LinkedIn}></img></a></li>
+      <li className = 'social-li'><a target="_blank" href="https://www.linkedin.com/in/carriepresley/" rel="noreferrer"><img src={LinkedIn} alt= "carrie presley linked in"></img></a></li>
      
     </Ul>
     
   )
 }
 
-export default RightNav
+export default RightNav;

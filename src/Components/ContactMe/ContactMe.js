@@ -8,10 +8,10 @@ import {Col} from "react-bootstrap";
 const StyledContactMe = styled.div `
 
    text-align: center;
-    margin-top: 100px;
-    padding: 50px;
+    padding-top: 50px;
     font-size: 50px;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 3px;
     text-transform: uppercase;
     background-color: #000000;
     color: white !important;

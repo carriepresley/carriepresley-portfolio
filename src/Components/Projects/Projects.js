@@ -12,11 +12,13 @@ const StyledProjects = styled.div`
     text-align: center;
     margin: 50px 5px;
     font-size: 50px;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 3px;
 
     .project-desc{
         font-size: 22px;
         margin: 10px 20px;
+        letter-spacing: 0px;
     }
   
 `;

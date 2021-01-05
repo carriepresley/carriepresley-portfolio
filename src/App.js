@@ -11,6 +11,7 @@ import { Container } from "react-bootstrap";
 import {Row} from "react-bootstrap";
 import {CgSun} from "react-icons/cg";
 import {HiMoon} from "react-icons/hi";
+import "./index.css";
 
 
 
@@ -20,8 +21,14 @@ const StyledApp = styled.div `
   .dark-toggle{
     float:right;
     margin-right: 3px;
-    
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+   
+    margin-top: 0px;
+    margin-right:20px;
   }
+  
 
 `;
 
