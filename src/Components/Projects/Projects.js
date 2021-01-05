@@ -22,10 +22,8 @@ const StyledProjects = styled.div`
     }
   
   .card{
-    width: 18rem;
+    width: 20rem;
     font-size: 22px;
-    margin: 10px 20px;
-    letter-spacing: 0px;
     border-color: white;
     border-width: 7px;
   }
@@ -35,6 +33,8 @@ const StyledProjects = styled.div`
   .card-body{
       font-size: 18px;
       color: black !important;
+      letter-spacing: 1px;
+
   }
   .card-image-top{
       width: 400px;
@@ -43,6 +43,7 @@ const StyledProjects = styled.div`
 
     #button{
         background-color: #0000cc;
+        margin-bottom: 50px;
 
 }
 
@@ -69,10 +70,10 @@ function Projects (){
         </Container>
 
         {/*Card 1*/}
-        <Container fluid = {true}>
+        <Container fluid = {true} >
             <Row className = "justify-content-center">
 
-            <Col s = {12} md = {6} lg = {4}>
+            <Col>
         <div class="card" >
             
         <img class="card-img-top" src={Project3} alt="left brain vibes link" target="_blank" href="https://patrickpresley.com"/>
@@ -85,7 +86,7 @@ function Projects (){
         </Col>
  
     {/*Card 2*/}
-    <Col s = {12} md = {6} lg = {4}>
+    <Col>
         <div class="card" >
             
         <img class="card-img-top" src={Project2} alt="left brain vibes link" target="_blank" href="https://leftbrainvibes.com"/>
@@ -98,7 +99,7 @@ function Projects (){
         </Col>    
 
     {/*Card 3*/}           
-    <Col s = {12} md = {6} lg = {4}>
+    <Col>
         <div class="card" >
             
         <img class="card-img-top" src={Project1} alt="left brain vibes link" target="_blank" href="https://axios-api-github.netlify.app/"/>

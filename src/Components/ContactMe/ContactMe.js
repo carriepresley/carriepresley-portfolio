@@ -9,6 +9,7 @@ const StyledContactMe = styled.div `
 
    text-align: center;
     padding-top: 50px;
+    padding-bottom: 50px;
     font-size: 50px;
     font-family: 'Lato', sans-serif;
     letter-spacing: 3px;
@@ -19,9 +20,9 @@ const StyledContactMe = styled.div `
 
    
     #submitbutton{
-        background-color: #ddd0be;
+        background-color: #0000cc;
         border-color: black;
-        color: black;
+        color: white;
         font-family: 'Montserrat', sans-serif; 
         font-size: 18px;
     }
