@@ -26,6 +26,7 @@ const StyledProjects = styled.div`
     font-size: 22px;
     border-color: white;
     border-width: 7px;
+    margin: 10px;
   }
 
  

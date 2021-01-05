@@ -12,6 +12,9 @@ const StyledAboutMe =styled.div`
     padding: 0px;
     margin: 10px 10px;
 
+   
+  }
+
     #darkmode-toggle{
         margin: 0px 2px 0px 0px;
         padding:0px;
@@ -25,6 +28,8 @@ const StyledAboutMe =styled.div`
         margin: 20px 10px 10px 20px;
 
     }
+
+  
 
 `;
 
