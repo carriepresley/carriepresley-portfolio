@@ -10,6 +10,7 @@ import Project3 from "./GnR.jpg";
 
 const StyledProjects = styled.div`
     text-align: center;
+    align-content: center;
     margin: 50px 5px;
     font-size: 50px;
     font-family: 'Lato', sans-serif;
@@ -19,6 +20,9 @@ const StyledProjects = styled.div`
 
     h1{
         padding-bottom: 10px;
+        text-align: center;
+        display: inline-flex;
+
     }
   
   .card{
@@ -27,6 +31,8 @@ const StyledProjects = styled.div`
     border-color: white;
     border-width: 7px;
     margin: 10px;
+    display: inline-block;
+    
   }
 
  
@@ -35,6 +41,7 @@ const StyledProjects = styled.div`
       font-size: 18px;
       color: black !important;
       letter-spacing: 1px;
+
 
   }
   .card-image-top{
