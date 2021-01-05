@@ -10,7 +10,7 @@ const StyledCard =styled.div`
   height: 450px;
   background: grey;
   border-radius: 5px;
-  background-image: url(https://res.cloudinary.com/carriepresley/image/upload/v1609633635/card%20sort/IMG_8086_2_fgalr1.jpg);
+  background-image: url(https://res.cloudinary.com/carriepresley/image/upload/c_scale,w_400/v1609633635/card%20sort/IMG_8086_2_fgalr1.jpg);
   background-size: cover;
   background-position: center center;
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
