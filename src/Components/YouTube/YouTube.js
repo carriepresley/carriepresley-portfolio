@@ -10,6 +10,8 @@ import ReactPlayer from "react-player";
 const StyledAboutMe =styled.div`
     padding: 0.4px 0px 0px 0px;
     background-color: #ddd0be;
+    align-items: center;
+    justify-content: center;
 
     h2{
     font-family: 'Montserrat', sans-serif; 
@@ -22,6 +24,7 @@ const StyledAboutMe =styled.div`
     color: black !important;
 
     }
+
  
   
     #youtube-row{
@@ -56,7 +59,7 @@ function YouTube (){
             </h2>
             </Col>
             <Col className ="d-flex justify-content-center" id= "text-right" md = {6} xl = {7} >
-            <div className="App">
+            <div className='vid'>
       <a href="https://www.cluemediator.com"></a>
       <ReactPlayer
         url="https://www.youtube.com/watch?v=ejqLa48h0pc&t=6s"

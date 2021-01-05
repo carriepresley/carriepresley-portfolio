@@ -8,14 +8,18 @@ import {Col} from "react-bootstrap";
 const StyledContactMe = styled.div `
 
    text-align: center;
-    margin: 20px 5px;
+    margin-top: 100px;
+    padding: 50px;
     font-size: 50px;
     font-family: 'Montserrat', sans-serif; 
     text-transform: uppercase;
+    background-color: #000000;
+    color: white !important;
+
 
    
     #submitbutton{
-        background-color: #cccc99;
+        background-color: #ddd0be;
         border-color: black;
         color: black;
         font-family: 'Montserrat', sans-serif; 
@@ -30,8 +34,8 @@ const StyledContactMe = styled.div `
 function ContactForm(){
 
     function submitFunction(){
-        document.getElementById("submitbutton").style.backgroundColor = '#cccc33';
-        document.getElementById("submitbutton").style.borderColor = '#cccc33';
+        document.getElementById("submitbutton").style.backgroundColor = '#ff6699';
+        document.getElementById("submitbutton").style.borderColor = '#000000';
 
         document.getElementById("submitbutton").value = "Message Sent";
     }
@@ -59,6 +63,7 @@ function ContactForm(){
         <h1>
                 Contact Me
             </h1>
+           
         </Col>   
         </Row>
         </Container>
