@@ -18,6 +18,7 @@ const StyledAboutMeWords = styled.div`
         font-family: 'Lato', sans-serif;
         font-size: 30px;
         line-height: 50px;
+        font-weight: lighter;
         }
 
         @media (max-width: 768px) {

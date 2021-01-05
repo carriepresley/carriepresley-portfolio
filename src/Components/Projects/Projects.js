@@ -14,13 +14,45 @@ const StyledProjects = styled.div`
     font-size: 50px;
     font-family: 'Lato', sans-serif;
     letter-spacing: 3px;
+    padding-top: 10px;
 
-    .project-desc{
-        font-size: 22px;
-        margin: 10px 20px;
-        letter-spacing: 0px;
+
+    h1{
+        padding-bottom: 10px;
     }
   
+  .card{
+    width: 18rem;
+    font-size: 22px;
+    margin: 10px 20px;
+    letter-spacing: 0px;
+    border-color: white;
+    border-width: 7px;
+  }
+
+ 
+
+  .card-body{
+      font-size: 18px;
+      color: black !important;
+  }
+  .card-image-top{
+      width: 400px;
+      height: 500px;
+  }
+
+    #button{
+        background-color: #0000cc;
+
+}
+
+#button:hover{
+      opacity: 0.75;
+      transition: ease-in-out 0.3s;
+
+  }
+
+
 `;
 
 function Projects (){
@@ -35,24 +67,48 @@ function Projects (){
                 </Col>
             </Row>
         </Container>
+
+        {/*Card 1*/}
         <Container fluid = {true}>
             <Row className = "justify-content-center">
 
             <Col s = {12} md = {6} lg = {4}>
-               <a target="_blank" href="https://patrickpresley.com/"><img src={Project3} alt= 'carrie presley github link' className = "image"></img></a>
-               <div className = 'project-desc'> Making static landing pages and blogs with Gatsby & React is my jam. </div>
-               </Col>
-               
-                <Col s = {12} md = {6} lg = {4}>
-               <a target="_blank" href="https://leftbrainvibes.com"><img src={Project2} alt= 'left brain vibes' className = "image"></img></a>
-               <div className = 'project-desc'> Left Brain Vibes, a project created with React, JavaScript, and a plethora of fun dependencies. </div>
-                </Col>
+        <div class="card" >
+            
+        <img class="card-img-top" src={Project3} alt="left brain vibes link" target="_blank" href="https://patrickpresley.com"/>
+            <div class="card-body">
+                <p class="card-text">LANDING PAGE built with Gatsby and React.
+                </p>
+            </div>
+            <a href="https://patrickpresley.com" class="btn btn-primary" id="button">Check it out!</a>
+        </div>
+        </Col>
+ 
+    {/*Card 2*/}
+    <Col s = {12} md = {6} lg = {4}>
+        <div class="card" >
+            
+        <img class="card-img-top" src={Project2} alt="left brain vibes link" target="_blank" href="https://leftbrainvibes.com"/>
+            <div class="card-body">
+                <p class="card-text">LEFT BRAIN VIBES built with JavaScript & React.
+                </p>
+            </div>
+            <a href="https://leftbrainvibes.com" class="btn btn-primary" id="button">Check it out!</a>
+        </div>
+        </Col>    
 
-                <div></div>
-                <Col s = {12} md = {6} lg = {4}>
-               <a target="_blank" href="https://axios-api-github.netlify.app/"><img src={Project1} alt= 'axios api practice' className = "image"></img></a>
-               <div className = 'project-desc'> Check out what I'm working on right now in GitHub!</div>
-                </Col>
+    {/*Card 3*/}           
+    <Col s = {12} md = {6} lg = {4}>
+        <div class="card" >
+            
+        <img class="card-img-top" src={Project1} alt="left brain vibes link" target="_blank" href="https://axios-api-github.netlify.app/"/>
+            <div class="card-body">
+                <p class="card-text">GITHUB project built with Axios and GitHub API.
+                </p>
+            </div>
+            <a href="https://axios-api-github.netlify.app/" class="btn btn-primary" id="button">Check it out!</a>
+        </div>
+        </Col>
 
 
             </Row>

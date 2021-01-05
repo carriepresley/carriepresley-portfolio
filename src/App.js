@@ -21,6 +21,7 @@ const StyledApp = styled.div `
   .dark-toggle{
     float:right;
     margin-right: 3px;
+    padding-top: 10px;
     cursor: pointer;
 
     @media (max-width: 768px) {

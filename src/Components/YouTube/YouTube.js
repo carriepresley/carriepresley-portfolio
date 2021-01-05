@@ -8,10 +8,11 @@ import ReactPlayer from "react-player";
 
 
 const StyledAboutMe =styled.div`
-    padding: 0.4px 0px 0px 0px;
+    padding: 0.4px 0px 10px 0px;
     background-color: #ddd0be;
     align-items: center;
     justify-content: center;
+
 
     h2{
     font-family: 'Lato', sans-serif;
@@ -21,10 +22,20 @@ const StyledAboutMe =styled.div`
     -moz-osx-font-smoothing: grayscale;
     min-height: 100%;
     margin-top: 20px;
+    
     color: black !important;
 
     }
+    @media (max-width: 768px) {
+           h1{
+               font-size: 40px;
 
+           } 
+           h2{
+               font-size: 20px;
+               line-height: 30px;
+           }
+        }
  
   
     #youtube-row{
