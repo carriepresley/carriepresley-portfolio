@@ -7,10 +7,19 @@ import {Col} from "react-bootstrap";
 
 const StyledContactMe = styled.div `
 
-    text-align: center;
+   text-align: center;
     margin: 20px 5px;
-    h1{
-        
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif; 
+    text-transform: uppercase;
+
+   
+    #submitbutton{
+        background-color: #cccc99;
+        border-color: black;
+        color: black;
+        font-family: 'Montserrat', sans-serif; 
+        font-size: 18px;
     }
 
 `;
@@ -21,7 +30,9 @@ const StyledContactMe = styled.div `
 function ContactForm(){
 
     function submitFunction(){
-        document.getElementById("submitbutton").style.backgroundColor = '#ff6699';
+        document.getElementById("submitbutton").style.backgroundColor = '#cccc33';
+        document.getElementById("submitbutton").style.borderColor = '#cccc33';
+
         document.getElementById("submitbutton").value = "Message Sent";
     }
 
