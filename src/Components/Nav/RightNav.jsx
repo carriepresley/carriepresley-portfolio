@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import GitHub from "./github.png";
-import LinkedIn from "./linkedin.png";
+import Insta from "./insta.png";
+import LinkedIn from "./li.png";
 import Twitter from "./twitter.png";
 
 
@@ -43,11 +43,12 @@ const RightNav = ({ open }) => {
   return (
       
     <Ul open={open}>
-      <li><a target="_blank" href="https://github.com/carriepresley"><img src={GitHub} alt= 'carrie presley github link' ></img></a></li>
 
-      <li><a target="_blank" href="https://twitter.com/carriepresley15"><img src={Twitter} alt= 'carrie presley twitter link'></img></a></li>
+    <li><a target="_blank" href="https://twitter.com/carriepresley15"><img src={Twitter} alt= 'carrie presley twitter link'></img></a></li>
 
-      <li><a target="_blank" href=""><img src={LinkedIn}></img></a></li>
+      <li><a target="_blank" href="https://www.instagram.com/carriepresley/"><img src={Insta} alt= 'carrie presley github link' ></img></a></li>
+
+      <li><a target="_blank" href="https://www.linkedin.com/in/carriepresley/"><img src={LinkedIn}></img></a></li>
      
     </Ul>
     

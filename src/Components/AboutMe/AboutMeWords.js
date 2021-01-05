@@ -29,7 +29,7 @@ const StyledAboutMeWords = styled.div`
                line-height: 30px;
            }
         }
-  
+       
 
 `;
 
@@ -38,7 +38,7 @@ function AboutMeWords(){
         <StyledAboutMeWords>
         <h1>Hey, what's up? I'm Carrie.</h1>
         <br></br>
-        <h2>I'm a self-taught software engineer, who loves creating things, educating humans, and dancing to old school rap music.</h2>
+        <h2>I'm a self-taught software engineer, who loves creating things, educating humans, and dancing to old-school rap music.</h2>
         
            </StyledAboutMeWords>
     )

@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import NavBar from "./Components/Nav/NavBar.jsx";
 import AboutMe from "./Components/AboutMe/AboutMe";
+import YouTube from "./Components/YouTube/YouTube";
 import Projects from "./Components/Projects/Projects";
 import ContactMe from "./Components/ContactMe/ContactMe";
 import Footer from "./Components/Footer/Footer";
@@ -48,6 +49,7 @@ function App() {
       </Container>
       
       <AboutMe/>
+      <YouTube/>
       <Projects/>
       <ContactMe/>
       <Footer/>
