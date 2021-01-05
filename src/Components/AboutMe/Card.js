@@ -6,8 +6,8 @@ import styled from "styled-components";
 const StyledCard =styled.div`
 
 .card {
-  width: 400px;
-  height: 500px;
+  width: 350px;
+  height: 450px;
   background: grey;
   border-radius: 5px;
   background-image: url(https://res.cloudinary.com/carriepresley/image/upload/v1609633635/card%20sort/IMG_8086_2_fgalr1.jpg);
@@ -16,9 +16,10 @@ const StyledCard =styled.div`
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.5s;
   will-change: transform;
-  border: 15px solid white;
+  border: 10px solid whitesmoke;
+    
 
-  
+  }
 }
 
 .card:hover {

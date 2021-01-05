@@ -7,10 +7,3 @@
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-
-
-*{
-    animation: fadeInAnimation ease 1.33s;
-  animation-iteration-count:1;
-  animation-fill-mode: forwards;
-}

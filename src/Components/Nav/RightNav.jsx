@@ -15,10 +15,9 @@ const Ul = styled.ul`
   }
 
   img:hover{
-    width: 120%;
+    width: 110%;
     height: auto;
-    transition: ease-in-out 0.4s;
-    opacity: 0.5;
+    transition: ease-in-out 1.0s;
   }
 
 

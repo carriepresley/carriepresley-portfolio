@@ -6,7 +6,7 @@ import "../../../src/index.css";
 const Nav = styled.nav`
   width: auto;
   height: 55px;
-  border-bottom: 2px solid #f1f1f1;
+  border-bottom: 0.1px solid whitesmoke;
   margin: 30px;
   display: flex;
   justify-content: space-between;
