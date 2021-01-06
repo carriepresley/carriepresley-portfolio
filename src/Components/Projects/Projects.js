@@ -27,11 +27,13 @@ const StyledProjects = styled.div`
   
   .card{
     width: 20rem;
+    height: 100%;
     font-size: 22px;
-    border-color: white;
-    border-width: 7px;
+    border-color: grey;
+    border-width: 0.5px;
     margin: 10px;
     display: inline-block;
+    padding: 10px;
     
   }
 
@@ -51,7 +53,7 @@ const StyledProjects = styled.div`
 
     #button{
         background-color: #0000cc;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
 
 }
 
@@ -61,6 +63,17 @@ const StyledProjects = styled.div`
 
   }
 
+  #button-repo{
+        background-color: green;
+        margin-bottom: 20px;
+
+}
+
+#button-repo:hover{
+      opacity: 0.75;
+      transition: ease-in-out 0.3s;
+
+  }
 
 `;
 
@@ -86,10 +99,12 @@ function Projects (){
             
         <img class="card-img-top" src={Project3} alt="left brain vibes link" target="_blank" href="https://patrickpresley.com"/>
             <div class="card-body">
-                <p class="card-text">Building quick landing pages/blogs with Gatsby & React.
+                <p class="card-text">A simple landing page built with React, Gatsby, and Styled Components. I love building quick static sites!
                 </p>
             </div>
-            <a href="https://patrickpresley.com" class="btn btn-primary" id="button">Check it out!</a>
+            <a href="https://github.com/carriepresley/patrickpresley" class="btn btn-primary" id="button-repo">Repo on GitHub</a>
+            <a href="https://patrickpresley.com" class="btn btn-primary" id="button">Deployed on Netlify</a>
+            
         </div>
         </Col>
  
@@ -99,10 +114,11 @@ function Projects (){
             
         <img class="card-img-top" src={Project2} alt="left brain vibes link" target="_blank" href="https://leftbrainvibes.com"/>
             <div class="card-body">
-                <p class="card-text">LEFT BRAIN VIBES built with JavaScript & React.
+            <p class="card-text">Left Brain Vibes, my first React & JavaScript and side project of building creative, interactive tutorials.
                 </p>
             </div>
-            <a href="https://leftbrainvibes.com" class="btn btn-primary" id="button">Check it out!</a>
+            <a href="https://github.com/carriepresley/leftbrainvibes" class="btn btn-primary" id="button-repo">Repo on GitHub</a>
+            <a href="https://leftbrainvibes.com" class="btn btn-primary" id="button">Deployed on Netlify</a>
         </div>
         </Col>    
 
@@ -112,10 +128,11 @@ function Projects (){
             
         <img class="card-img-top" src={Project1} alt="left brain vibes link" target="_blank" href="https://axios-api-github.netlify.app/"/>
             <div class="card-body">
-                <p class="card-text">Here's what I'm working on today!
+                <p class="card-text">I'm learning & building with different API's. Here's a recent list of my GitHub repo's using the GitHub API.
                 </p>
             </div>
-            <a href="https://axios-api-github.netlify.app/" class="btn btn-primary" id="button">Check it out!</a>
+            <a href="https://github.com/carriepresley/githubapi" class="btn btn-primary" id="button-repo">Repo on GitHub</a>
+            <a href="https://axios-api-github.netlify.app/" class="btn btn-primary" id="button">Deployed on Netlify</a>
         </div>
         </Col>
 

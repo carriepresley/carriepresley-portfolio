@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const StyledCard =styled.div`
 
-.card {
+.card-floating {
   width: 350px;
   height: 450px;
   background: grey;
@@ -25,7 +25,7 @@ const StyledCard =styled.div`
   }
 }
 
-.card:hover {
+.card-floating:hover {
   box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
 }
 
@@ -42,7 +42,7 @@ function Card() {
   return (
     <StyledCard>
     <animated.div
-      class="card"
+      class="card-floating"
       onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
       onMouseLeave={() => set({ xys: [0, 0, 1] })}
       style={{ transform: props.xys.interpolate(trans) }}

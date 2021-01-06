@@ -10,7 +10,8 @@ import styled from "styled-components";
 
 const StyledAboutMe =styled.div`
     padding: 0px;
-    margin: 10px 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
    
   }

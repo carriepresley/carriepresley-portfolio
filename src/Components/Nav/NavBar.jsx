@@ -4,6 +4,8 @@ import Burger from './Burger';
 import "../../../src/index.css";
 
 const Nav = styled.nav`
+margin-top: 20px;
+margin-bottom: 20px;
   width: auto;
   height: 55px;
  border-bottom: solid .01px grey;

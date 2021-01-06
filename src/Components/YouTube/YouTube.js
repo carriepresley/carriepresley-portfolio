@@ -8,10 +8,13 @@ import ReactPlayer from "react-player";
 
 
 const StyledAboutMe =styled.div`
-    padding: 0.4px 0px 10px 0px;
+    
     background-color: #ddd0be;
     align-items: center;
     justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
 
 
     h2{
@@ -34,7 +37,10 @@ const StyledAboutMe =styled.div`
            h2{
                font-size: 20px;
                line-height: 30px;
+               text-align: center;
+               display: flex;
            }
+           
         }
  
   
@@ -54,20 +60,7 @@ const StyledAboutMe =styled.div`
         margin: 20px 10px 10px 20px;
 
     }
-.vid {
-  width: auto; // Reset width
-  height: auto; // Reset height
-}
-.react-player {
-  padding-top: 56.25%; // Percentage ratio for 16:9
-  position: relative; // Set to relative
-}
 
-.react-player > div {
-  position: absolute; // Scaling will occur since parent is relative now
-}
-}
-    
 
 `;
 
@@ -78,9 +71,9 @@ function YouTube (){
         <StyledAboutMe>
         <Container fluid ={true}>
         <Row className= "justify-content-center" md ={12} id ="youtube-row"> 
-            <Col className = "d-flex justify-content-center" md = {6} xl = {4} >
+            <Col  md = {6} xl = {4} >
             <h2>
-                Follow along as I share my journey into tech, coding tutorials, and simple explanations to math and programming topics!
+                Follow along with me on YouTube as I share my journey into tech, coding tutorials, and simple explanations to math and programming topics!
             </h2>
             </Col>
             <Col className ="d-flex justify-content-center" id= "text-right" md = {6} xl = {7} >
@@ -88,6 +81,8 @@ function YouTube (){
       <a href="https://www.cluemediator.com"></a>
       <ReactPlayer
         url="https://www.youtube.com/watch?v=ejqLa48h0pc&t=6s"
+    className="react-player"
+      
       />
     </div>
            </Col>

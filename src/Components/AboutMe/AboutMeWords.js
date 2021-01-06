@@ -19,6 +19,7 @@ const StyledAboutMeWords = styled.div`
         font-size: 30px;
         line-height: 50px;
         font-weight: lighter;
+        letter-spacing: 0.5px;
         }
 
         @media (max-width: 768px) {

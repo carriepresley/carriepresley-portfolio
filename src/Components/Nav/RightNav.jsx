@@ -10,6 +10,7 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
+  
   li {
     padding: 18px 10px;
     color: #fff;
@@ -43,7 +44,9 @@ const RightNav = ({ open }) => {
       
     <Ul open={open}>
 
-    <li className = 'socials'><a target="_blank" href="https://twitter.com/carriepresley15" rel="noreferrer"><img src={Twitter} alt= 'carrie presley twitter link'></img></a></li>
+    <li className = 'socials'><a target="_blank" href="https://twitter.com/carriepresley15" rel="noreferrer"><img src= {Twitter} alt= 'carrie presley twitter link'></img></a></li>
+
+    
 
       <li className = 'socials'><a target="_blank" href="https://www.instagram.com/carriepresley/" rel="noreferrer"><img src={Insta} alt= 'carrie presley github link' ></img></a></li>
 
