@@ -95,15 +95,17 @@ function Projects() {
               </div>
               <a
                 href="https://github.com/carriepresley/patrickpresley"
-                class="btn btn-primary"
+                className="btn btn-primary"
                 id="button-repo"
+                alt = "Click here to see the project on GitHub"
               >
                 Repo on GitHub
               </a>
               <a
                 href="https://patrickpresley.com"
-                class="btn btn-primary"
+                className="btn btn-primary"
                 id="button"
+                alt = "Click here to see the deployed project"
               >
                 Deployed on Netlify
               </a>
@@ -128,15 +130,17 @@ function Projects() {
               </div>
               <a
                 href="https://github.com/carriepresley/leftbrainvibes"
-                class="btn btn-primary"
+                className="btn btn-primary"
                 id="button-repo"
+                alt = "Click here to see the project on GitHub"
               >
                 Repo on GitHub
               </a>
               <a
                 href="https://leftbrainvibes.com"
-                class="btn btn-primary"
+                className="btn btn-primary"
                 id="button"
+                alt = "Click here to see the deployed project"
               >
                 Deployed on Netlify
               </a>
@@ -161,15 +165,17 @@ function Projects() {
               </div>
               <a
                 href="https://github.com/carriepresley/githubapi"
-                class="btn btn-primary"
+                className="btn btn-primary"
                 id="button-repo"
+                alt = "Click here to see the project on GitHub"
               >
                 Repo on GitHub
               </a>
               <a
                 href="https://axios-api-github.netlify.app/"
-                class="btn btn-primary"
+                className="btn btn-primary"
                 id="button"
+                alt = "Click here to see the deployed project"
               >
                 Deployed on Netlify
               </a>

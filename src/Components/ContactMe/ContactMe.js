@@ -70,30 +70,37 @@ function ContactForm() {
         <form onSubmit={sendEmail}>
           <div className="row pt-5 mx-auto">
             <div className="col-8 form-group mx-auto">
+            <label for = "Name">
               <input
                 type="text"
                 className="form-control"
                 placeholder="Name"
                 name="name"
               />
+              </label>
             </div>
             <div className="col-8 form-group pt-2 mx-auto">
+            <label for = "Email">
               <input
                 type="email"
                 className="form-control"
                 placeholder="Email"
                 name="email"
               />
+              </label>
             </div>
             <div className="col-8 form-group pt-2 mx-auto">
+            <label for = "Subject">
               <input
                 type="text"
                 className="form-control"
                 placeholder="Subject"
                 name="subject"
               />
+              </label>
             </div>
             <div className="col-8 form-group pt-2 mx-auto">
+            <label for = "Message">
               <textarea
                 className="form-control"
                 id=""
@@ -102,6 +109,7 @@ function ContactForm() {
                 placeholder="Message"
                 name="message"
               ></textarea>
+              </label>
             </div>
             <div className="col-8 pt-3 mx-auto">
               <input
