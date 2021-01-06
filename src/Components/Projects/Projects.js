@@ -86,7 +86,7 @@ function Projects (){
             
         <img class="card-img-top" src={Project3} alt="left brain vibes link" target="_blank" href="https://patrickpresley.com"/>
             <div class="card-body">
-                <p class="card-text">LANDING PAGE built with Gatsby and React.
+                <p class="card-text">Building quick landing pages/blogs with Gatsby & React.
                 </p>
             </div>
             <a href="https://patrickpresley.com" class="btn btn-primary" id="button">Check it out!</a>
@@ -112,7 +112,7 @@ function Projects (){
             
         <img class="card-img-top" src={Project1} alt="left brain vibes link" target="_blank" href="https://axios-api-github.netlify.app/"/>
             <div class="card-body">
-                <p class="card-text">GITHUB project built with Axios and GitHub API.
+                <p class="card-text">Here's what I'm working on today!
                 </p>
             </div>
             <a href="https://axios-api-github.netlify.app/" class="btn btn-primary" id="button">Check it out!</a>

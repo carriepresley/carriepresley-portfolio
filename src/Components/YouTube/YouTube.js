@@ -54,6 +54,20 @@ const StyledAboutMe =styled.div`
         margin: 20px 10px 10px 20px;
 
     }
+.vid {
+  width: auto; // Reset width
+  height: auto; // Reset height
+}
+.react-player {
+  padding-top: 56.25%; // Percentage ratio for 16:9
+  position: relative; // Set to relative
+}
+
+.react-player > div {
+  position: absolute; // Scaling will occur since parent is relative now
+}
+}
+    
 
 `;
 
