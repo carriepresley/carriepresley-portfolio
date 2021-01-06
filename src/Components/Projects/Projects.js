@@ -10,14 +10,14 @@ import Project3 from "./GnR.jpg";
 const StyledProjects = styled.div`
   text-align: center;
   align-content: center;
-  margin: 50px 5px;
   font-size: 50px;
   font-family: "Lato", sans-serif;
-  letter-spacing: 3px;
-  padding-top: 10px;
+  letter-spacing: 2px;
+  padding: 10px;
+  margin: 50px 0px;
 
   h1 {
-    padding-bottom: 10px;
+    padding-bottom: 40px;
     text-align: center;
     display: inline-flex;
   }
@@ -27,40 +27,54 @@ const StyledProjects = styled.div`
     height: 100%;
     font-size: 22px;
     border-color: grey;
-    border-width: 0.5px;
-    margin: 10px;
-    display: inline-block;
-    padding: 10px;
-  }
 
+    display: inline-block;
+  }
+  .around-card {
+    margin: 20px 5px;
+  }
   .card-body {
     font-size: 18px;
     color: black !important;
     letter-spacing: 1px;
+    margin: 10px;
   }
   .card-image-top {
     width: 400px;
     height: 500px;
   }
 
-  #button {
-    background-color: #0000cc;
+  #button-deployed {
+    font-size: 20px;
+    border: none;
     margin-bottom: 20px;
+    color: white;
+    background-color:black;
+   
+    width: 300px;
   }
 
-  #button:hover {
-    opacity: 0.75;
+  #button-deployed:hover {
     transition: ease-in-out 0.3s;
+    opacity: 0.7;
+    background-color: #170571;
   }
 
   #button-repo {
-    background-color: green;
+    font-size: 20px;
+    border: none;
+    margin-top: 20px;
     margin-bottom: 20px;
+    color: white;
+    width: 300px;
+
+    background-color: black;
   }
 
   #button-repo:hover {
-    opacity: 0.75;
     transition: ease-in-out 0.3s;
+    opacity: 0.7;
+    background-color: #1d4a08;
   }
 `;
 
@@ -78,7 +92,7 @@ function Projects() {
       {/*Card 1*/}
       <Container fluid={true}>
         <Row className="justify-content-center">
-          <Col>
+          <Col className="around-card">
             <div class="card">
               <img
                 class="card-img-top"
@@ -97,15 +111,15 @@ function Projects() {
                 href="https://github.com/carriepresley/patrickpresley"
                 className="btn btn-primary"
                 id="button-repo"
-                alt = "Click here to see the project on GitHub"
+                alt="Click here to see the project on GitHub"
               >
                 Repo on GitHub
               </a>
               <a
                 href="https://patrickpresley.com"
                 className="btn btn-primary"
-                id="button"
-                alt = "Click here to see the deployed project"
+                id="button-deployed"
+                alt="Click here to see the deployed project"
               >
                 Deployed on Netlify
               </a>
@@ -113,7 +127,7 @@ function Projects() {
           </Col>
 
           {/*Card 2*/}
-          <Col>
+          <Col className="around-card">
             <div class="card">
               <img
                 class="card-img-top"
@@ -132,15 +146,15 @@ function Projects() {
                 href="https://github.com/carriepresley/leftbrainvibes"
                 className="btn btn-primary"
                 id="button-repo"
-                alt = "Click here to see the project on GitHub"
+                alt="Click here to see the project on GitHub"
               >
                 Repo on GitHub
               </a>
               <a
                 href="https://leftbrainvibes.com"
                 className="btn btn-primary"
-                id="button"
-                alt = "Click here to see the deployed project"
+                id="button-deployed"
+                alt="Click here to see the deployed project"
               >
                 Deployed on Netlify
               </a>
@@ -148,7 +162,7 @@ function Projects() {
           </Col>
 
           {/*Card 3*/}
-          <Col>
+          <Col className="around-card">
             <div class="card">
               <img
                 class="card-img-top"
@@ -167,15 +181,15 @@ function Projects() {
                 href="https://github.com/carriepresley/githubapi"
                 className="btn btn-primary"
                 id="button-repo"
-                alt = "Click here to see the project on GitHub"
+                alt="Click here to see the project on GitHub"
               >
                 Repo on GitHub
               </a>
               <a
                 href="https://axios-api-github.netlify.app/"
                 className="btn btn-primary"
-                id="button"
-                alt = "Click here to see the deployed project"
+                id="button-deployed"
+                alt="Click here to see the deployed project"
               >
                 Deployed on Netlify
               </a>

@@ -28,8 +28,6 @@ const StyledAboutMe = styled.div`
 
     }
 
-  
-
 `;
 
 function AboutMe() {

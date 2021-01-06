@@ -12,22 +12,50 @@ const StyledContactMe = styled.div`
   font-size: 50px;
   font-family: "Lato", sans-serif;
   letter-spacing: 3px;
-  text-transform: uppercase;
+  
   background-color: #000000;
   color: white !important;
+  
 
   #submitbutton {
-    background-color: #0000cc;
     border-color: black;
     color: white;
     font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-size: 20px;
+background: #413e3e;
+box-shadow:  20px 20px 60px #373535,
+             -20px -20px 60px #4b4747;
+             padding: 10px 20px;
+             letter-spacing:1px;
   }
 
-  #submitbutton:hover{
+  #submitbutton:hover {
     opacity: 0.75;
     transition: ease-in-out 0.3s;
+    
+  }
+ 
 
+  h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+    line-height: 50px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100%;
+    letter-spacing: 1px;
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 22px;
+      line-height: 40px;
+
+   
+    
   }
   
 `;
@@ -61,7 +89,8 @@ function ContactForm() {
       <Container>
         <Row className="justify-content-center" s={12} xl={12}>
           <Col className="justify-content-center" s={12} xl={12}>
-            <h1>Contact Me</h1>
+            <h1>CONTACT ME</h1>
+            <h2>Holla anytime, I'd love to hear from you!</h2>
           </Col>
         </Row>
       </Container>
@@ -70,46 +99,48 @@ function ContactForm() {
         <form onSubmit={sendEmail}>
           <div className="row pt-5 mx-auto">
             <div className="col-8 form-group mx-auto">
-            <label for = "Name">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Name"
-                name="name"
-              />
-              </label>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Name"
+                  name="name"
+                  label = "name"
+                />
             </div>
             <div className="col-8 form-group pt-2 mx-auto">
-            <label for = "Email">
-              <input
-                type="email"
-                className="form-control"
-                placeholder="Email"
-                name="email"
-              />
-              </label>
+
+                <input
+                  type="email"
+                  className="form-control"
+                  placeholder="Email"
+                  name="email"
+                  label = 'email'
+                />
+             
             </div>
             <div className="col-8 form-group pt-2 mx-auto">
-            <label for = "Subject">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Subject"
-                name="subject"
-              />
-              </label>
+             
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Subject"
+                  name="subject"
+                  label = "subject"
+                />
+              
             </div>
             <div className="col-8 form-group pt-2 mx-auto">
-            <label for = "Message">
-              <textarea
-                className="form-control"
-                id=""
-                cols="33"
-                rows="7"
-                placeholder="Message"
-                name="message"
-              ></textarea>
-              </label>
+             
+                <textarea
+                  className="form-control"
+                  id=""
+                  cols="33"
+                  rows="7"
+                  placeholder="Message"
+                  name="message"
+                  label = "message to Carrie"
+                ></textarea>
+          
             </div>
             <div className="col-8 pt-3 mx-auto">
               <input
@@ -117,6 +148,7 @@ function ContactForm() {
                 className="btn btn-info"
                 value="Send Message"
                 id="submitbutton"
+                label = "submit button"
                 onClick={submitFunction}
               ></input>
             </div>

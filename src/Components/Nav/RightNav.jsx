@@ -1,22 +1,24 @@
 import React from "react";
 import styled from "styled-components";
 import Insta from "./insta.png";
-import LinkedIn from "./li.png";
+import LinkedIn from "./linkedin.png";
 import Twitter from "./twitter.png";
+import TikTok from "./tiktok.png";
 
 const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
+  
 
   li {
-    padding: 18px 10px;
-    color: #fff;
-    margin-left: 38px;
-    cursor: pointer;
+    padding: 10px 33px;
+    
+   
   }
-  .social-li {
-    padding-right: 30px;
+  .socials {
+    width: 40px;
+
   }
 
   @media (max-width: 768px) {
@@ -35,33 +37,36 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li className="socials">
+      <li>
         <a
           target="_blank"
           href="https://twitter.com/carriepresley15"
           rel="noreferrer"
+          
         >
-          <img src={Twitter} alt="carrie presley twitter link"></img>
+          <img src={Twitter} alt="carrie presley twitter link" className="socials"></img>
         </a>
       </li>
 
-      <li className="socials">
+      <li>
         <a
           target="_blank"
           href="https://www.instagram.com/carriepresley/"
           rel="noreferrer"
+          
         >
-          <img src={Insta} alt="carrie presley github link"></img>
+          <img src={Insta} alt="carrie presley github link" className="socials"></img>
         </a>
       </li>
 
-      <li className="social-li">
+      <li>
         <a
           target="_blank"
           href="https://www.linkedin.com/in/carriepresley/"
           rel="noreferrer"
+          
         >
-          <img src={LinkedIn} alt="carrie presley linked in"></img>
+          <img src={TikTok} alt="carrie presley linked in" className="socials"></img>
         </a>
       </li>
     </Ul>
