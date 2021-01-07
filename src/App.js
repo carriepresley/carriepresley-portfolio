@@ -13,7 +13,9 @@ import { CgSun } from "react-icons/cg";
 import { HiMoon } from "react-icons/hi";
 import "./index.css";
 
-import YouTube2 from "./Components/YouTube/YouTubeVid";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const StyledApp = styled.div` 
   color: ${(props) => props.theme.fontColor};
@@ -52,11 +54,38 @@ function App() {
             <div onClick={themeToggler}>{icon}</div>
           </Row>
         </Container>
-
-        <AboutMe />
-        <YouTube />
-        <Projects />
-        <ContactMe />
+        <div
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out-cubic"
+        >
+          <AboutMe />
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out-cubic"
+        >
+          <YouTube />
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out-cubic"
+        >
+          <Projects />
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="2000"
+          data-aos-easing="ease-in-out-cubic"
+        >
+          <ContactMe />
+        </div>
         <Footer />
       </StyledApp>
     </ThemeProvider>

@@ -112,6 +112,8 @@ function Projects() {
                 className="btn btn-primary"
                 id="button-repo"
                 alt="Click here to see the project on GitHub"
+                rel = "noreferrer"
+                target="_blank"
               >
                 Repo on GitHub
               </a>
@@ -120,6 +122,8 @@ function Projects() {
                 className="btn btn-primary"
                 id="button-deployed"
                 alt="Click here to see the deployed project"
+                rel = "noreferrer"
+                target="_blank"
               >
                 Deployed on Netlify
               </a>
@@ -147,6 +151,8 @@ function Projects() {
                 className="btn btn-primary"
                 id="button-repo"
                 alt="Click here to see the project on GitHub"
+                rel = "noreferrer"
+                target="_blank"
               >
                 Repo on GitHub
               </a>
@@ -155,6 +161,8 @@ function Projects() {
                 className="btn btn-primary"
                 id="button-deployed"
                 alt="Click here to see the deployed project"
+                rel = "noreferrer"
+                target="_blank"
               >
                 Deployed on Netlify
               </a>
@@ -182,6 +190,8 @@ function Projects() {
                 className="btn btn-primary"
                 id="button-repo"
                 alt="Click here to see the project on GitHub"
+                rel = "noreferrer"
+                target="_blank"
               >
                 Repo on GitHub
               </a>
@@ -190,6 +200,8 @@ function Projects() {
                 className="btn btn-primary"
                 id="button-deployed"
                 alt="Click here to see the deployed project"
+                rel = "noreferrer"
+                target="_blank"
               >
                 Deployed on Netlify
               </a>
