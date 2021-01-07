@@ -12,7 +12,6 @@ const StyledAboutMe = styled.div`
   justify-content: center;
   padding: 20px 0px;
 
-
   h2 {
     font-family: "Lato", sans-serif;
     font-size: 30px;
@@ -26,22 +25,22 @@ const StyledAboutMe = styled.div`
   }
   @media (max-width: 768px) {
 
-  
-
+    #youtube-row {
+   
+  }
     h1 {
       font-size: 40px;
     }
     h2 {
       font-size: 22px;
       line-height: 40px;
+      padding: 20px 0px;
+
     }
-    padding-top: 1px;
+    padding-top: 0px;
     padding-bottom: 0px;
-    
+
   }
-
- 
-
 
   #youtube-row {
     margin: 100px 20px 100px 20px;
@@ -63,7 +62,6 @@ const StyledAboutMe = styled.div`
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
-    
   }
 
   .check-it-out {
@@ -78,9 +76,7 @@ const StyledAboutMe = styled.div`
     height: 80px;
     margin-top: 10px;
     text-align: center;
-    letter-spacing:1px;
-
-    
+    letter-spacing: 1px;
   }
 
   .check-it-out:hover {
@@ -90,9 +86,6 @@ const StyledAboutMe = styled.div`
     border-style: none;
     opacity: 0.8;
   }
-
-   
- 
 `;
 
 function YouTube() {
@@ -116,7 +109,7 @@ function YouTube() {
             </h2>
           </Col>
           <Col>
-          <YouTubeVid/>
+            <YouTubeVid />
           </Col>
         </Row>
       </Container>
