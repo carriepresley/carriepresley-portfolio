@@ -55,26 +55,23 @@ function App() {
             <div onClick={themeToggler}>{icon}</div>
           </Row>
         </Container>
+
+        <AboutMe />
+
         <div
           data-aos="fade-up"
           data-aos-delay="50"
           data-aos-duration="1000"
           data-aos-easing="fade-in-out"
         >
-
-        <AboutMe />
+          {" "}
+          <YouTube />
         </div>
+
         <div
           data-aos="fade-up"
           data-aos-delay="50"
           data-aos-duration="1000"
-          data-aos-easing="fade-in-out"
-        > <YouTube/></div>
-
-        <div
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="2000"
           data-aos-easing="fade-in-out"
         >
           <Projects />
@@ -83,7 +80,7 @@ function App() {
         <div
           data-aos="fade-up"
           data-aos-delay="50"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           data-aos-easing="fade-in-out"
         >
           <ContactMe />
