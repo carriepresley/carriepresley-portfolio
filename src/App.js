@@ -15,6 +15,7 @@ import "./index.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+AOS.init();
 
 const StyledApp = styled.div` 
   color: ${(props) => props.theme.fontColor};
@@ -36,7 +37,6 @@ const StyledApp = styled.div`
 `;
 
 function App() {
-  AOS.init();
   const [theme, setTheme] = useState("light");
 
   const icon = theme === "light" ? <HiMoon size={40} /> : <CgSun size={40} />;
@@ -55,15 +55,39 @@ function App() {
             <div onClick={themeToggler}>{icon}</div>
           </Row>
         </Container>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="fade-in-out"
+        >
 
         <AboutMe />
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="fade-in-out"
+        > <YouTube/></div>
 
-        <YouTube />
+        <div
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="2000"
+          data-aos-easing="fade-in-out"
+        >
+          <Projects />
+        </div>
 
-        <Projects />
-
-        <ContactMe />
-
+        <div
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="2000"
+          data-aos-easing="fade-in-out"
+        >
+          <ContactMe />
+        </div>
         <Footer />
       </StyledApp>
     </ThemeProvider>
