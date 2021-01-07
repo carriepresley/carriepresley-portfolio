@@ -31,7 +31,6 @@ const Nav = styled.nav`
   }
 
   .logo {
-    padding: 10px 0px;
     font-family: "Montserrat", sans-serif;
     font-size: 33px;
     letter-spacing: 1px;

@@ -13,14 +13,18 @@ const Ul = styled.ul`
   
 
   li {
-    padding: 10px 33px;
+    padding: 10px 40px;
     
-    
+  .top-li{
+  
+    width: 28px;
+
+  }
     
    
   }
   .socials {
-    width: 40px;
+    width: 28px;
     
 
   }
@@ -35,20 +39,27 @@ const Ul = styled.ul`
     height: 100vh;
     width: 100px;
     padding-top: 3.5rem;
+
+
+    .top-li{
+    margin-top: 20px;
+    
+
+  }
   }
 `;
 
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li>
+      <li >
         <a
           target="_blank"
           href="https://twitter.com/carriepresley15"
           rel="noreferrer"
           
         >
-          <img src={Twitter} alt="carrie presley twitter link" className="socials"></img>
+          <img src={Twitter} alt="carrie presley twitter link" className= "top-li"></img>
         </a>
       </li>
 
