@@ -15,7 +15,6 @@ import "./index.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-AOS.init();
 
 const StyledApp = styled.div` 
   color: ${(props) => props.theme.fontColor};
@@ -37,6 +36,7 @@ const StyledApp = styled.div`
 `;
 
 function App() {
+  AOS.init();
   const [theme, setTheme] = useState("light");
 
   const icon = theme === "light" ? <HiMoon size={40} /> : <CgSun size={40} />;
@@ -44,6 +44,7 @@ function App() {
   const themeToggler = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
   };
+
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
@@ -54,38 +55,15 @@ function App() {
             <div onClick={themeToggler}>{icon}</div>
           </Row>
         </Container>
-        <div
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out-cubic"
-        >
-          <AboutMe />
-        </div>
-        <div
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out-cubic"
-        >
-          <YouTube />
-        </div>
-        <div
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out-cubic"
-        >
-          <Projects />
-        </div>
-        <div
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="2000"
-          data-aos-easing="ease-in-out-cubic"
-        >
-          <ContactMe />
-        </div>
+
+        <AboutMe />
+
+        <YouTube />
+
+        <Projects />
+
+        <ContactMe />
+
         <Footer />
       </StyledApp>
     </ThemeProvider>
