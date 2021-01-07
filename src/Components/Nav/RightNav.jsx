@@ -10,14 +10,18 @@ const Ul = styled.ul`
   display: flex;
   flex-flow: row nowrap;
   
+  
 
   li {
     padding: 10px 33px;
+    
+    
     
    
   }
   .socials {
     width: 40px;
+    
 
   }
 

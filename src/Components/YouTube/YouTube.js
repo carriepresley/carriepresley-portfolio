@@ -3,13 +3,15 @@ import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import styled from "styled-components";
-import ReactPlayer from "react-player";
+
+import YouTubeVid from "./YouTubeVid";
 
 const StyledAboutMe = styled.div`
   background-color: #e0e0e0;
   align-items: center;
   justify-content: center;
   padding: 20px 0px;
+
 
   h2 {
     font-family: "Lato", sans-serif;
@@ -23,6 +25,9 @@ const StyledAboutMe = styled.div`
     color: black !important;
   }
   @media (max-width: 768px) {
+
+  
+
     h1 {
       font-size: 40px;
     }
@@ -34,6 +39,9 @@ const StyledAboutMe = styled.div`
     padding-bottom: 0px;
     
   }
+
+ 
+
 
   #youtube-row {
     margin: 100px 20px 100px 20px;
@@ -82,6 +90,9 @@ const StyledAboutMe = styled.div`
     border-style: none;
     opacity: 0.8;
   }
+
+   
+ 
 `;
 
 function YouTube() {
@@ -104,18 +115,8 @@ function YouTube() {
               <button className="check-it-out">Let's go!</button>
             </h2>
           </Col>
-          <Col
-            className="d-flex justify-content-center"
-            id="text-right"
-            md={6}
-            xl={6}
-          >
-            <div className="vid-wrapper">
-              <ReactPlayer
-                url="https://www.youtube.com/watch?v=ejqLa48h0pc&t=6s"
-                className="vid-player"
-              />
-            </div>
+          <Col>
+          <YouTubeVid/>
           </Col>
         </Row>
       </Container>

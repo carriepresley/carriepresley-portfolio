@@ -13,11 +13,13 @@ import { CgSun } from "react-icons/cg";
 import { HiMoon } from "react-icons/hi";
 import "./index.css";
 
+import YouTube2 from "./Components/YouTube/YouTubeVid";
+
 const StyledApp = styled.div` 
   color: ${(props) => props.theme.fontColor};
 
   .dark-toggle{
-    float:right;
+    float: right;
     margin-right: 3px;
     padding-top: 10px;
     cursor: pointer;
