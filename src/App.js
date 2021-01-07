@@ -58,15 +58,7 @@ function App() {
 
         <AboutMe />
 
-        <div
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="fade-in-out"
-        >
-          {" "}
-          <YouTube />
-        </div>
+        <YouTube />
 
         <div
           data-aos="fade-up"
@@ -77,14 +69,8 @@ function App() {
           <Projects />
         </div>
 
-        <div
-          data-aos="fade-up"
-          data-aos-delay="50"
-          data-aos-duration="1000"
-          data-aos-easing="fade-in-out"
-        >
-          <ContactMe />
-        </div>
+        <ContactMe />
+
         <Footer />
       </StyledApp>
     </ThemeProvider>
