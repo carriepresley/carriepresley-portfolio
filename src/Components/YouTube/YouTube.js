@@ -24,10 +24,8 @@ const StyledAboutMe = styled.div`
     color: black !important;
   }
   @media (max-width: 768px) {
-
     #youtube-row {
-   
-  }
+    }
     h1 {
       font-size: 40px;
     }
@@ -35,11 +33,9 @@ const StyledAboutMe = styled.div`
       font-size: 22px;
       line-height: 40px;
       padding: 20px 0px;
-
     }
     padding-top: 0px;
     padding-bottom: 0px;
-
   }
 
   #youtube-row {
@@ -64,7 +60,7 @@ const StyledAboutMe = styled.div`
     text-decoration: none;
   }
 
-  .check-it-out {
+  #check-it-out {
     border-style: none;
     color: white;
     font-weight: bold;
@@ -73,15 +69,13 @@ const StyledAboutMe = styled.div`
     font-size: 30px;
     border-radius: 5px;
     width: 200px;
-    height: 80px;
-    margin-top: 10px;
-    text-align: center;
+    height: 60px;
     letter-spacing: 1px;
   }
 
-  .check-it-out:hover {
-    width: 210px;
-    height: 90px;
+  #check-it-out:hover {
+    width: 205px;
+    height: 62px;
     transition: ease-out 0.3s;
     border-style: none;
     opacity: 0.8;
@@ -97,15 +91,24 @@ function YouTube() {
             <h2>
               Follow along with me on{" "}
               <a
+              rel = "noreferrer"
+                target="_blank"
                 className="YouTube"
-                href="https://www.youtube.com/channel/UCa7fiju8SbHb_wrysviZelw "
+                href="https://www.youtube.com/carriepresley"
               >
                 YouTube
               </a>{" "}
               as I share my journey in tech, tutorials, and simple explanations
               to math and programming topics!
               <br></br>
-              <button className="check-it-out">Let's go!</button>
+              <a 
+              className = "btn btn-primary"
+                id="check-it-out"
+                target="_blank"
+                href="https://www.youtube.com/carriepresley"
+              >
+                Let's go!
+              </a>
             </h2>
           </Col>
           <Col>

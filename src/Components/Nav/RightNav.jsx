@@ -70,7 +70,7 @@ const RightNav = ({ open }) => {
           rel="noreferrer"
           
         >
-          <img src={TikTok} alt="carrie presley linked in" className="socials"></img>
+          <img src={LinkedIn} alt="carrie presley linked in" className="socials"></img>
         </a>
       </li>
     </Ul>
