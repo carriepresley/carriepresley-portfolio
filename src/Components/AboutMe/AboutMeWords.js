@@ -39,7 +39,7 @@ function AboutMeWords() {
       <h1>Hey, what's up? I'm Carrie.</h1>
       <br></br>
       <h2>
-        I'm a self-taught software engineer who loves creating things,
+        I'm a self-taught software developer who loves creating things,
         educating humans, and dancing to old-school hip hop.
       </h2>
     </StyledAboutMeWords>
