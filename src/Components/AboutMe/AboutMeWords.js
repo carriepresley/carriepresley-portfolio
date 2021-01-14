@@ -11,7 +11,7 @@ const StyledAboutMeWords = styled.div`
 
   h1 {
     font-family: "Abril Fatface", cursive;
-    font-size: 100px;
+    font-size: 80px;
     letter-spacing: 1px;
   }
   h2 {
@@ -24,7 +24,7 @@ const StyledAboutMeWords = styled.div`
 
   @media (max-width: 768px) {
     h1 {
-      font-size: 75px;
+      font-size: 55px;
     }
     h2 {
       font-size: 30px;
@@ -36,7 +36,8 @@ const StyledAboutMeWords = styled.div`
 function AboutMeWords() {
   return (
     <StyledAboutMeWords>
-      <h1>Hey, what's up? I'm Carrie.</h1>
+      <h1>Hey, what's up? </h1>
+      <h1>I'm Carrie. </h1>
       <br></br>
       <h2>
         I'm a self-taught software developer who loves creating things,
