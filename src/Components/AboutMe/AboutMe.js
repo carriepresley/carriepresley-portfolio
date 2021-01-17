@@ -8,8 +8,9 @@ import styled from "styled-components";
 
 const StyledAboutMe = styled.div`
     padding: 0px;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
+
 
    
   }
@@ -25,6 +26,11 @@ const StyledAboutMe = styled.div`
  
     #text-right{
         margin: 20px 10px 10px 20px;
+
+    }
+
+    @media (max-width: 768px){
+      padding-top: 50px;
 
     }
 
@@ -48,6 +54,7 @@ function AboutMe() {
           </Col>
         </Row>
       </Container>
+      <div id = "blog"></div>
     </StyledAboutMe>
   );
 }

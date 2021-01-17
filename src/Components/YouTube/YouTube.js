@@ -7,13 +7,13 @@ import styled from "styled-components";
 import YouTubeVid from "./YouTubeVid";
 
 const StyledAboutMe = styled.div`
-  background-color: #e0e0e0;
+ 
   align-items: center;
   justify-content: center;
   padding: 20px 0px;
 
   h2 {
-    font-family: "Lato", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 30px;
     line-height: 50px;
     -webkit-font-smoothing: antialiased;
@@ -21,7 +21,7 @@ const StyledAboutMe = styled.div`
     min-height: 100%;
     letter-spacing: 1px;
 
-    color: black !important;
+   
   }
   @media (max-width: 768px) {
     #youtube-row {
@@ -87,7 +87,7 @@ function YouTube() {
     <StyledAboutMe>
       <Container fluid={true}>
         <Row className="justify-content-center" md={12} id="youtube-row">
-          <Col md={6} xl={4}>
+          <Col md={6} xl={6}>
             <h2>
               Follow along with me on{" "}
               <a
@@ -106,16 +106,18 @@ function YouTube() {
                 id="check-it-out"
                 target="_blank"
                 href="https://www.youtube.com/carriepresley"
+                rel = 'noreferrer'
               >
                 Let's go!
               </a>
             </h2>
           </Col>
-          <Col>
+          <Col md={6} xl={6}>
             <YouTubeVid />
           </Col>
         </Row>
       </Container>
+      <div id = "portfolio"></div>
     </StyledAboutMe>
   );
 }

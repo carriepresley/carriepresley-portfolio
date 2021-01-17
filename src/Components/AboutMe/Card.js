@@ -5,21 +5,24 @@ import styled from "styled-components";
 const StyledCard = styled.div`
   .card-floating {
     width: 350px;
-    height: 450px;
+    height: 420px;
     background: grey;
     border-radius: 5px;
-    background-image: url(https://res.cloudinary.com/carriepresley/image/upload/c_scale,w_400/v1609633635/card%20sort/IMG_8086_2_fgalr1.jpg);
+    background-image: url(https://res.cloudinary.com/carriepresley/image/upload/v1610662333/carriepresley/MePolaroid_h9rjdp.jpg);
     background-size: cover;
     background-position: center center;
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
     transition: box-shadow 0.5s;
     will-change: transform;
-    border: 10px solid whitesmoke;
+   
+   
+    
     box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
 
     @media (max-width: 768px) {
       z-index: -1;
       margin-top: 50px;
+      position: relative;
     }
   }
 

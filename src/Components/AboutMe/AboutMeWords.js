@@ -7,15 +7,18 @@ const StyledAboutMeWords = styled.div`
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100%;
-  padding-top: 20px;
 
+  
+  
+  
   h1 {
     font-family: "Abril Fatface", cursive;
-    font-size: 80px;
+    font-size: 60px;
     letter-spacing: 1px;
+    
   }
   h2 {
-    font-family: "Lato", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 40px;
     line-height: 70px;
     font-weight: lighter;
@@ -36,8 +39,16 @@ const StyledAboutMeWords = styled.div`
 function AboutMeWords() {
   return (
     <StyledAboutMeWords>
-      <h1>Hey, what's up? </h1>
-      <h1>I'm Carrie. </h1>
+    <div
+    data-aos="fade-left"
+          data-aos-delay="20"
+          data-aos-duration="1000"
+      >
+    <h1>Hey, what's up? </h1>
+    <h1>I'm Carrie. </h1>
+    </div>
+      
+      
       <br></br>
       <h2>
         I'm a self-taught software developer who loves creating things,

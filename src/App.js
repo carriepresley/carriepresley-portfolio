@@ -12,7 +12,7 @@ import { Row } from "react-bootstrap";
 import { CgSun } from "react-icons/cg";
 import { HiMoon } from "react-icons/hi";
 import "./index.css";
-
+import Blog from "./Components/Blog/Blog";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
@@ -36,6 +36,11 @@ const StyledApp = styled.div`
 
 `;
 
+
+
+
+
+
 function App() {
   const [theme, setTheme] = useState("light");
 
@@ -57,20 +62,29 @@ function App() {
         </Container>
 
         <AboutMe />
+        <div
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="2000"
+          data-aos-easing="fade-in-out"
+        >
+          <Blog />
+        </div>
 
         <YouTube />
 
         <div
           data-aos="fade-up"
           data-aos-delay="50"
-          data-aos-duration="1000"
+          data-aos-duration="2000"
           data-aos-easing="fade-in-out"
         >
           <Projects />
         </div>
 
-        <ContactMe />
-
+        
+          <ContactMe />
+        
         <Footer />
       </StyledApp>
     </ThemeProvider>

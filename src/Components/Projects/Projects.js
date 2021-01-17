@@ -11,7 +11,7 @@ const StyledProjects = styled.div`
   text-align: center;
   align-content: center;
   font-size: 50px;
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 2px;
   padding: 10px;
   margin: 50px 0px;
@@ -81,10 +81,12 @@ const StyledProjects = styled.div`
 function Projects() {
   return (
     <StyledProjects>
-      <Container fluid={true}>
+    
+    
+      <Container fluid={true} >
         <Row>
           <Col>
-            <h1>PORTFOLIO</h1>
+            <h1 >PORTFOLIO</h1>
           </Col>
         </Row>
       </Container>
@@ -209,6 +211,7 @@ function Projects() {
           </Col>
         </Row>
       </Container>
+      <div id = "contactme"></div>
     </StyledProjects>
   );
 }

@@ -1,87 +1,67 @@
 import React from "react";
 import styled from "styled-components";
-import Insta from "./insta.png";
-import LinkedIn from "./linkedin.png";
-import Twitter from "./twitter.png";
-import TikTok from "./tiktok.png";
 
 const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
+  margin-top: 10px;
   
   
 
-  li {
-    padding: 10px 40px;
-    
-  .top-li{
-  
-    width: 28px;
-
+  .list-item {
+    padding: 40px 20px;
+    margin: 10px;
+    color: grey;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    text-decoration: none;
   }
-    
-   
-  }
-  .socials {
-    width: 28px;
-    
 
+  .list-item:hover {
+    color: blue;
   }
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: whitesmoke;
-    position: fixed;
+    background-color: whitesmoke !important;
+    position: absolute;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
     right: 0;
-    height: 100vh;
-    width: 100px;
-    padding-top: 3.5rem;
+    height: 150px;
+    width: 200px;
+    padding: 10px;
+    justify-content: space-around;
+    margin: 0px;
 
+    .list-item {
+      padding: 0px;
 
-    .top-li{
-    margin-top: 20px;
-    
-
-  }
+      font-size: 24px;
+      text-decoration: none;
+    }
   }
 `;
 
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li >
-        <a
-          target="_blank"
-          href="https://twitter.com/carriepresley15"
-          rel="noreferrer"
-          
-        >
-          <img src={Twitter} alt="carrie presley twitter link" className= "top-li"></img>
+      <li>
+        <a href="#portfolio" className="list-item" id="top-item">
+          Portfolio
         </a>
       </li>
 
       <li>
-        <a
-          target="_blank"
-          href="https://www.instagram.com/carriepresley/"
-          rel="noreferrer"
-          
-        >
-          <img src={Insta} alt="carrie presley github link" className="socials"></img>
+        <a href="#blog" className="list-item">
+          Blog
         </a>
       </li>
-
       <li>
-        <a
-          target="_blank"
-          href="https://www.linkedin.com/in/carriepresley/"
-          rel="noreferrer"
-          
-        >
-          <img src={LinkedIn} alt="carrie presley linked in" className="socials"></img>
+        <a href="#contactme" className="list-item">
+          {" "}
+          Contact
         </a>
       </li>
     </Ul>
