@@ -4,6 +4,13 @@ import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import styled from "styled-components";
 import Blog1 from "./Blog_1/blog_1.png";
+import Blog_1 from "./Blog_1/Blog_1";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 const StyledBlog = styled.div`
   text-align: center;
@@ -23,21 +30,21 @@ const StyledBlog = styled.div`
   }
 
   .card {
-    width: 20rem;
+    width: 22rem;
     height: 100%;
     font-size: 22px;
-
+    opacity: 0.9;
     display: inline-block;
 
     border-radius: 10px;
     box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-
     transition: ease-in-out 0.3s;
   }
 
   .card:hover {
-  width: 20rem;
-  height: 100%;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    transition: ease-in-out 0.3s;
+    opacity: 1.0;
   }
   .around-card {
     margin: 20px 5px;
@@ -51,6 +58,10 @@ const StyledBlog = styled.div`
   .card-image-top {
     width: 400px;
     height: 500px;
+  }
+
+  .card-text {
+    font-size: 18px;
   }
 `;
 
@@ -66,16 +77,13 @@ function Blog() {
       </Container>
 
       {/*Card 1*/}
+      <Router>
       <Container fluid={true}>
         <Row className="justify-content-center">
           <Col className="around-card">
             <div className="card-con">
-              <a
-                href="https://patrickpresley.com"
-                target="_blank"
-                className="custom-card"
-                rel="noreferrer"
-              >
+              <Link to="/blog"> </Link>
+                <Route path="/blog" exact component={Blog_1} />
                 <div class="card">
                   <img
                     class="card-img-top"
@@ -83,16 +91,22 @@ function Blog() {
                     alt="left brain vibes link"
                   />
                   <div class="card-body">
-                    <p class="card-text">MacBook setup for coding!</p>
+                    <p class="card-text">
+                      MacBook setup for front-end software development!
+                    </p>
                   </div>
                 </div>
-              </a>
+              
             </div>
           </Col>
         </Row>
       </Container>
+      </Router>
     </StyledBlog>
   );
 }
 
 export default Blog;
+
+
+

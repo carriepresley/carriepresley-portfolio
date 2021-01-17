@@ -35,6 +35,9 @@ const Nav = styled.nav`
     font-size: 33px;
     letter-spacing: 1px;
     margin-left: 20px;
+    text-decoration: none;
+    color: inherit;
+ 
    
 
     @media (max-width: 768px) {
@@ -47,7 +50,10 @@ const Nav = styled.nav`
 const Navbar = () => {
   return (
     <Nav>
-      <div className="logo">CARRIE PRESLEY</div>
+    <a href = "https://carriepresley.com" className="logo">
+    <div >CARRIE PRESLEY</div>
+    </a>
+      
       <Burger />
     </Nav>
   );

@@ -6,7 +6,8 @@ const Ul = styled.ul`
   display: flex;
   flex-flow: row nowrap;
   margin-top: 10px;
-  
+
+ 
   
 
   .list-item {
@@ -19,7 +20,7 @@ const Ul = styled.ul`
   }
 
   .list-item:hover {
-    color: blue;
+    font-weight: bolder;
   }
 
   @media (max-width: 768px) {
@@ -33,8 +34,10 @@ const Ul = styled.ul`
     width: 200px;
     padding: 10px;
     justify-content: space-around;
-    margin: 0px;
-
+    border-radius: 5x;
+    border: 1px solid grey;
+   
+    transition: ease-in-out 0.3s;
     .list-item {
       padding: 0px;
 
@@ -47,6 +50,7 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
+    
       <li>
         <a href="#portfolio" className="list-item" id="top-item">
           Portfolio
@@ -69,3 +73,7 @@ const RightNav = ({ open }) => {
 };
 
 export default RightNav;
+
+
+
+
