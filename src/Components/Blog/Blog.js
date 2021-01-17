@@ -82,7 +82,7 @@ function Blog() {
         <Row className="justify-content-center">
           <Col className="around-card">
             <div className="card-con">
-              <Link to="/blog"> </Link>
+              <Link to="/blog"/>
                 <Route path="/blog" exact component={Blog_1} />
                 <div class="card">
                   <img

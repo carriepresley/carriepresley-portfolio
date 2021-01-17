@@ -26,11 +26,13 @@ const StyledApp = styled.div`
     padding-top: 10px;
     cursor: pointer;
     transition: ease-in-out  0.5s;
+   
 
     @media (max-width: 768px) {
    
     margin-top: 0px;
     margin-right:20px;
+    
   }
  
 
@@ -68,7 +70,7 @@ function App() {
           data-aos-duration="2000"
           data-aos-easing="fade-in-out"
         >
-          <Blog />
+          {/*<Blog />*/}
         </div>
 
         <YouTube />

@@ -58,9 +58,9 @@ const RightNav = ({ open }) => {
       </li>
 
       <li>
-        <a href="#blog" className="list-item">
-          Blog
-        </a>
+        {/*<a href="#blog" className="list-item">
+          Services
+        </a>*/}
       </li>
       <li>
         <a href="#contactme" className="list-item">

@@ -11,6 +11,7 @@ const StyledAboutMe = styled.div`
   align-items: center;
   justify-content: center;
   padding: 20px 0px;
+  background-color:#e0e0e0;
 
   h2 {
     font-family: "Montserrat", sans-serif;
