@@ -21,6 +21,7 @@ const StyledAboutMe = styled.div`
     -moz-osx-font-smoothing: grayscale;
     min-height: 100%;
     letter-spacing: 1px;
+    color: black !important;
 
    
   }

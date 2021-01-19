@@ -7,9 +7,6 @@ const Ul = styled.ul`
   flex-flow: row nowrap;
   margin-top: 10px;
 
- 
-  
-
   .list-item {
     padding: 40px 20px;
     margin: 10px;
@@ -36,7 +33,7 @@ const Ul = styled.ul`
     justify-content: space-around;
     border-radius: 5x;
     border: 1px solid grey;
-   
+
     transition: ease-in-out 0.3s;
     .list-item {
       padding: 0px;
@@ -50,7 +47,6 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-    
       <li>
         <a href="#portfolio" className="list-item" id="top-item">
           Portfolio
@@ -73,7 +69,3 @@ const RightNav = ({ open }) => {
 };
 
 export default RightNav;
-
-
-
-
