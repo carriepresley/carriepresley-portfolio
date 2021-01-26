@@ -33,8 +33,7 @@ const StyledAboutMeWords = styled.div`
       font-size: 30px;
       line-height: 40px;
     }
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+    
   }
 `;
 
