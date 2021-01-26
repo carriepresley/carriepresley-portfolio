@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NavBar from "./Components/Nav/NavBar.jsx";
+
 import AboutMe from "./Components/AboutMe/AboutMe";
 import YouTube from "./Components/YouTube/YouTube";
 import Projects from "./Components/Projects/Projects";
@@ -12,7 +12,7 @@ import { Row } from "react-bootstrap";
 import { CgSun } from "react-icons/cg";
 import { HiMoon } from "react-icons/hi";
 import "./index.css";
-import Blog from "./Components/Blog/Blog";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
@@ -56,7 +56,7 @@ function App() {
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
       <StyledApp>
-        <NavBar />
+       
         <Container>
           <Row className="dark-toggle" md={12}>
             <div onClick={themeToggler}>{icon}</div>
@@ -70,7 +70,7 @@ function App() {
           data-aos-duration="2000"
           data-aos-easing="fade-in-out"
         >
-          {/*<Blog />*/}
+         
         </div>
 
         <YouTube />
