@@ -27,12 +27,14 @@ const StyledAboutMeWords = styled.div`
 
   @media (max-width: 768px) {
     h1 {
-      font-size: 55px;
+      font-size: 40px;
     }
     h2 {
       font-size: 30px;
       line-height: 40px;
     }
+    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
 `;
 
