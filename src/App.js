@@ -22,10 +22,12 @@ const StyledApp = styled.div`
 
   .dark-toggle{
     float: right;
-    margin-right: 3px;
-    padding-top: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-right: 20px;
     cursor: pointer;
     transition: ease-in-out  0.5s;
+
    
 
     @media (max-width: 768px) {
