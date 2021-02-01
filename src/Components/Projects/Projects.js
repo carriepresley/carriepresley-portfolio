@@ -1,217 +1,187 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import styled from "styled-components";
+import image1 from "./img1.jpg";
+import image2 from "./img2.jpg";
+import image3 from "./img3.jpg";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
-import styled from "styled-components";
-import Project1 from "./GitHub.jpg";
-import Project2 from "./LBV.gif";
-import Project3 from "./GnR.jpg";
+import { Container } from "react-bootstrap";
 
 const StyledProjects = styled.div`
-  text-align: center;
-  align-content: center;
-  font-size: 50px;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 2px;
-  padding: 10px;
-  margin: 50px 0px;
-
-  h1 {
-    padding-bottom: 40px;
-    text-align: center;
-    display: inline-flex;
+  .body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
   }
-
+  .box {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    margin: 0 auto;
+  }
   .card {
-    width: 20rem;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background:  whitesmoke;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .card:before,
+  .card:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    font-size: 22px;
-    border-color: grey;
+    border-radius: 4px;
+    background: #fff;
+    transition: 0.5s;
+    z-index: -1;
+  }
 
-    display: inline-block;
+  .card:hover:before {
+    transform: rotate(20deg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   }
-  .around-card {
-    margin: 20px 5px;
+  .card:hover:after {
+    transform: rotate(10deg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   }
-  .card-body {
-    font-size: 18px;
-    color: black !important;
+
+  .card .imgBox {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: #222;
+    transition: 0.5s;
+    z-index: 1;
+  }
+
+  .card:hover .imgBox {
+    bottom: 80px;
+  }
+
+  .card .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .details {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    line-height: 50px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     letter-spacing: 1px;
-    margin: 10px;
   }
-  .card-image-top {
-    width: 400px;
-    height: 500px;
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 3px;
+    padding-bottom: 50px;
+    padding-top: 20px;
   }
-
-  #button-deployed {
+  h2 {
     font-size: 20px;
-    border: none;
-    margin-bottom: 20px;
-    color: white;
-    background-color:black;
-   
-    width: 300px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    text-transform: uppercase;
   }
 
-  #button-deployed:hover {
-    transition: ease-in-out 0.3s;
-    opacity: 0.7;
-    background-color: #170571;
+  .card .details {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 60px;
+    text-align: center;
+    display: block;
   }
 
-  #button-repo {
-    font-size: 20px;
-    border: none;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: white;
-    width: 300px;
-
-    background-color: black;
+  .card .details h2 span {
+    line-height: 30px;
+    font-weight: 300;
+    font-size: 16px;
+    display: block;
+    margin-top: -5px;
   }
 
-  #button-repo:hover {
-    transition: ease-in-out 0.3s;
-    opacity: 0.7;
-    background-color: #1d4a08;
+  @media (max-width: 768px) {
+    padding-top: 50px;
+
+    .card .imgBox {
+      bottom: 80px;
+    }
   }
 `;
 
 function Projects() {
   return (
     <StyledProjects>
-    
-    
-      <Container fluid={true} >
-        <Row>
-          <Col>
-            <h1 >PORTFOLIO</h1>
+      <Container>
+        <Row className="justify-content-center" s={12} xl={12}>
+          <Col className="justify-content-center" s={12} xl={12}>
+            <h1>PROJECTS</h1>
           </Col>
         </Row>
+
+        <div className="body">
+          <div className="box">
+            <div className="card">
+              <div className="imgBox">
+                <img src={image1} />
+              </div>
+              <div className="details">
+                <h2>
+                  Project 1<br></br>
+                  <span>More info</span>
+                </h2>
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="imgBox">
+                <img src={image2} />
+              </div>
+              <div className="details">
+                <h2>
+                  Project 2<br></br>
+                  <span>More info</span>
+                </h2>
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="imgBox">
+                <img src={image3} />
+              </div>
+              <div className="details">
+                <h2>
+                  Project 3<br></br>
+                  <span>More info</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="contactme"></div>
       </Container>
-
-      {/*Card 1*/}
-      <Container fluid={true}>
-        <Row className="justify-content-center">
-          <Col className="around-card">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src={Project3}
-                alt="left brain vibes link"
-                target="_blank"
-                href="https://patrickpresley.com"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  A simple landing page built with React, Gatsby, and Styled
-                  Components. I love building quick static sites!
-                </p>
-              </div>
-              <a
-                href="https://github.com/carriepresley/patrickpresley"
-                className="btn btn-primary"
-                id="button-repo"
-                alt="Click here to see the project on GitHub"
-                rel = "noreferrer"
-                target="_blank"
-              >
-                Repo on GitHub
-              </a>
-              <a
-                href="https://patrickpresley.com"
-                className="btn btn-primary"
-                id="button-deployed"
-                alt="Click here to see the deployed project"
-                rel = "noreferrer"
-                target="_blank"
-              >
-                Deployed on Netlify
-              </a>
-            </div>
-          </Col>
-
-          {/*Card 2*/}
-          <Col className="around-card">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src={Project2}
-                alt="left brain vibes link"
-                target="_blank"
-                href="https://leftbrainvibes.com"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Left Brain Vibes, my first React & JavaScript and side project
-                  of building creative, interactive tutorials.
-                </p>
-              </div>
-              <a
-                href="https://github.com/carriepresley/leftbrainvibes"
-                className="btn btn-primary"
-                id="button-repo"
-                alt="Click here to see the project on GitHub"
-                rel = "noreferrer"
-                target="_blank"
-              >
-                Repo on GitHub
-              </a>
-              <a
-                href="https://leftbrainvibes.com"
-                className="btn btn-primary"
-                id="button-deployed"
-                alt="Click here to see the deployed project"
-                rel = "noreferrer"
-                target="_blank"
-              >
-                Deployed on Netlify
-              </a>
-            </div>
-          </Col>
-
-          {/*Card 3*/}
-          <Col className="around-card">
-            <div class="card">
-              <img
-                class="card-img-top"
-                src={Project1}
-                alt="left brain vibes link"
-                target="_blank"
-                href="https://axios-api-github.netlify.app/"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  I'm learning & building with different API's. Here's a recent
-                  list of my GitHub repo's using the GitHub API.
-                </p>
-              </div>
-              <a
-                href="https://github.com/carriepresley/githubapi"
-                className="btn btn-primary"
-                id="button-repo"
-                alt="Click here to see the project on GitHub"
-                rel = "noreferrer"
-                target="_blank"
-              >
-                Repo on GitHub
-              </a>
-              <a
-                href="https://axios-api-github.netlify.app/"
-                className="btn btn-primary"
-                id="button-deployed"
-                alt="Click here to see the deployed project"
-                rel = "noreferrer"
-                target="_blank"
-              >
-                Deployed on Netlify
-              </a>
-            </div>
-          </Col>
-        </Row>
-      </Container>
-      <div id = "contactme"></div>
     </StyledProjects>
   );
 }

@@ -5,11 +5,16 @@ import styled from "styled-components";
 
 
 const StyledFooter = styled.div `
+ 
+ margin: 0;
+ padding: 0;
+
 
 .footer-text{
   font-family: "Lato", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
+  
 
 }
 

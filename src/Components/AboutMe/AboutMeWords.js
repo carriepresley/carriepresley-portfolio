@@ -12,14 +12,15 @@ const StyledAboutMeWords = styled.div`
   
   
   h1 {
-    font-family: "Abril Fatface", cursive;
-    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
     letter-spacing: 1px;
     
   }
   h2 {
     font-family: "Montserrat", sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 70px;
     font-weight: lighter;
     letter-spacing: 0.5px;

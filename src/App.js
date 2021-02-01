@@ -5,6 +5,7 @@ import YouTube from "./Components/YouTube/YouTube";
 import Projects from "./Components/Projects/Projects";
 import ContactMe from "./Components/ContactMe/ContactMe";
 import Footer from "./Components/Footer/Footer";
+
 import styled, { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "./themes.js";
 import { Container } from "react-bootstrap";
@@ -58,6 +59,7 @@ function App() {
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
       <StyledApp>
+     
        
         <Container>
           <Row className="dark-toggle" md={12}>
