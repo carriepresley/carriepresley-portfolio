@@ -67,7 +67,7 @@ function App() {
           </Row>
         </Container>
 
-        <AboutMe />
+        <AboutMe/>
         <div
           data-aos="fade-up"
           data-aos-delay="50"

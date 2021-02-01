@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import styled from "styled-components";
-
+import Paper from "./papery.png";
 import YouTubeVid from "./YouTubeVid";
 
 const StyledAboutMe = styled.div`
@@ -11,7 +11,9 @@ const StyledAboutMe = styled.div`
   align-items: center;
   justify-content: center;
   padding: 1px 0px;
-  background-color:#e0e0e0;
+ 
+  background-image: url(${Paper});
+ background-size: cover;
 
   h2 {
     font-family: "Montserrat", sans-serif;
@@ -22,6 +24,7 @@ const StyledAboutMe = styled.div`
     min-height: 100%;
     letter-spacing: 1px;
     color: black !important;
+  margin-left: 40px;
 
    
   }
@@ -56,7 +59,7 @@ const StyledAboutMe = styled.div`
   }
 
   .YouTube {
-    color: red;
+    color: #bf6066;
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
@@ -66,7 +69,7 @@ const StyledAboutMe = styled.div`
     border-style: none;
     color: white;
     font-weight: bold;
-    background-color: red;
+    background-color: #bf6066;
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
     border-radius: 5px;

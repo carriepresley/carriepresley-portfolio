@@ -15,7 +15,7 @@ const Ul = styled.ul`
   display: flex;
   justify-content: center;
  
-  
+
   
 
   li {
@@ -34,6 +34,11 @@ const Ul = styled.ul`
     
 
   }
+
+  img{
+  width: 100%;
+  height: auto;
+}
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
@@ -58,28 +63,23 @@ const Ul = styled.ul`
 
 const StyledContactMe = styled.div`
   text-align: center;
-  padding-top: 100px;
+  padding-top: 200px;
   padding-bottom: 100px;
   font-size: 50px;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 3px;
-  
-  background-color: #101010;
-  color: white !important;
 
-  border-top: solid 0.01px grey;
+
+
 
 
   #submitbutton {
-    border-color: black;
+    border-color: whitesmoke;
     color: white;
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
-background: #413e3e;
-box-shadow:  20px 20px 60px #373535,
-             -20px -20px 60px #4b4747;
-             padding: 10px 20px;
-             letter-spacing:1px;
+background: #bf6066;
+
   }
 
   #submitbutton:hover {
@@ -111,15 +111,12 @@ box-shadow:  20px 20px 60px #373535,
     
   }
 
- img{
-    width: 30px;
-  }
   
 `;
 
 function ContactForm() {
   function submitFunction() {
-    document.getElementById("submitbutton").style.backgroundColor = "#ff6699";
+    document.getElementById("submitbutton").style.backgroundColor = "#212121";
     document.getElementById("submitbutton").style.borderColor = "#000000";
 
     document.getElementById("submitbutton").value = "Message Sent";
@@ -144,13 +141,22 @@ function ContactForm() {
   return (
     <StyledContactMe>
     
+    
       <Container >
         <Row className="justify-content-center" s={12} xl={12}>
           <Col className="justify-content-center" s={12} xl={12}>
-            <h1 >CONTACT ME</h1>
+          
+          <h1 >CONTACT ME</h1>
+  
+         
+       
+        
+            
+           
           </Col>
+          
           <Col>
-
+         
 
 
           <Ul>

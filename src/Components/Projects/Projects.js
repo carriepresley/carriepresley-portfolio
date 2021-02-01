@@ -87,6 +87,7 @@ const StyledProjects = styled.div`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     letter-spacing: 1px;
+    color: black !important;
   }
   h1 {
     text-align: center;
@@ -94,7 +95,8 @@ const StyledProjects = styled.div`
     font-family: "Montserrat", sans-serif;
     letter-spacing: 3px;
     padding-bottom: 50px;
-    padding-top: 20px;
+    padding-top: 50px;
+    
   }
   h2 {
     font-size: 20px;
@@ -102,6 +104,7 @@ const StyledProjects = styled.div`
     padding: 0;
     font-weight: 600;
     text-transform: uppercase;
+    color: black !important;
   }
 
   .card .details {
@@ -123,10 +126,14 @@ const StyledProjects = styled.div`
   }
 
   @media (max-width: 768px) {
-    padding-top: 50px;
+    padding-top: 0px;
 
     .card .imgBox {
       bottom: 80px;
+    }
+
+    .box{
+      grid-gap: 25px;
     }
   }
 `;

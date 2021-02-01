@@ -10,6 +10,8 @@ const StyledAboutMe = styled.div`
     padding: 0px;
     padding-top: 100px;
     padding-bottom: 100px;
+    
+   
 
 
    
@@ -30,9 +32,11 @@ const StyledAboutMe = styled.div`
     }
 
     @media (max-width: 768px){
-      padding-top: 50px;
+      padding-top: 10px;
+      padding-bottom: 0px;
 
     }
+    
 
 `;
 

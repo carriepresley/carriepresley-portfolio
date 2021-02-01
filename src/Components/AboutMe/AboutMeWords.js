@@ -1,12 +1,22 @@
 import React from "react";
 import "../../../src/index.css";
 import styled from "styled-components";
+import Tape from "./tapey.png";
+
 
 const StyledAboutMeWords = styled.div`
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100%;
+
+
+img{
+  width: 100%;
+  height: auto;
+}
+  
+
 
   
   
@@ -31,8 +41,12 @@ const StyledAboutMeWords = styled.div`
       font-size: 40px;
     }
     h2 {
+      padding-top: 10px;
       font-size: 30px;
       line-height: 40px;
+    }
+    img{
+      margin-top: -60px;
     }
     
   }
@@ -41,21 +55,21 @@ const StyledAboutMeWords = styled.div`
 function AboutMeWords() {
   return (
     <StyledAboutMeWords>
+    <div className = "tape">
     <div
-    data-aos="fade-left"
+      data-aos="fade-left"
           data-aos-delay="20"
-          data-aos-duration="1000"
-      >
-    <h1>Hey, what's up? </h1>
-    <h1>I'm Carrie. </h1>
+          data-aos-duration="1000">
+            <img src = {Tape}></img>
+          </div>
     </div>
       
       
-      <br></br>
-      <h2>
+    <div> <h2>
         I'm a self-taught software developer who loves creating things,
         educating humans, and dancing to old-school hip hop.
-      </h2>
+      </h2></div>
+     
     </StyledAboutMeWords>
   );
 }
