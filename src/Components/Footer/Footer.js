@@ -14,7 +14,7 @@ const StyledFooter = styled.div `
   font-family: "Lato", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
-  
+  font-size: 10px;
 
 }
 

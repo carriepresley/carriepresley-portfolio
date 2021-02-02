@@ -14,6 +14,9 @@ const StyledProjects = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
     
   }
   .box {
@@ -22,6 +25,7 @@ const StyledProjects = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 15px;
     margin: 0 auto;
+    cursor: pointer;
   }
   .card {
     position: relative;
@@ -102,8 +106,8 @@ const StyledProjects = styled.div`
     font-size: 20px;
     margin: 0;
     padding: 0;
-    font-weight: 600;
-    text-transform: uppercase;
+   
+   
     color: black !important;
   }
 
@@ -119,7 +123,7 @@ const StyledProjects = styled.div`
 
   .card .details h2 span {
     line-height: 30px;
-    font-weight: 300;
+   
     font-size: 16px;
     display: block;
     margin-top: -5px;

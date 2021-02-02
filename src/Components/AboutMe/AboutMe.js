@@ -10,6 +10,7 @@ const StyledAboutMe = styled.div`
     padding: 0px;
     padding-top: 100px;
     padding-bottom: 100px;
+   
     
    
 

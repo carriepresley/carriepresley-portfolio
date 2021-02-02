@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import styled from "styled-components";
-import Paper from "./paper.png";
+
 import YouTubeVid from "./YouTubeVid";
 
 const StyledAboutMe = styled.div`
@@ -11,7 +11,7 @@ const StyledAboutMe = styled.div`
   align-items: center;
   justify-content: center;
  padding: 10px;
- background-color: #202020;
+ background-color: #5d5d61;
  
 
 
@@ -105,7 +105,7 @@ function YouTube() {
               >
                 YouTube
               </a>{" "}
-              as I share my journey in tech, tutorials, and simple explanations
+              as I share my journey through tech, tutorials, and simple explanations
               to math and programming topics!
               <br></br>
               <a 
