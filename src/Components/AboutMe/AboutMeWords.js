@@ -36,7 +36,7 @@ img{
    
   }
   .about-me{
-    background-color: #dbca5e;
+    background-color: whitesmoke;
     padding: 100px 30px 20px 30px;
     margin-top: -100px;
     color: black !important;
