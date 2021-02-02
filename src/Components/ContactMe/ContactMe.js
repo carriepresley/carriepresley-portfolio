@@ -70,8 +70,7 @@ const StyledContactMe = styled.div`
   font-family: "Montserrat", sans-serif;
   letter-spacing: 3px;
 
-  background-image: url(${Cardboard});
- background-size: cover;
+  
 
 
 

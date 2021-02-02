@@ -31,12 +31,12 @@ img{
   h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
-    line-height: 70px;
+    line-height: 50px;
     letter-spacing: 0.5px;
    
   }
   .about-me{
-    background-color: #ffdf6c;
+    background-color: #dbca5e;
     padding: 100px 30px 20px 30px;
     margin-top: -100px;
     color: black !important;
@@ -48,15 +48,15 @@ img{
 
   @media (max-width: 768px) {
     h1 {
-      font-size: 40px;
+      font-size: 0px;
     }
     h2 {
       padding-top: 10px;
-      font-size: 30px;
-      line-height: 40px;
+      font-size: 20px;
+      line-height: 30px;
     }
     img{
-      margin-top: -60px;
+      margin-top: -70px;
       
     }
     

@@ -10,7 +10,7 @@ const StyledAboutMe = styled.div`
  
   align-items: center;
   justify-content: center;
-  padding: 1px 0px;
+  padding: 80px 0px 10px 0px;
  
   background-image: url(${Paper});
  background-size: cover;
