@@ -36,28 +36,16 @@ const Ul = styled.ul`
 
   }
 
+  .socials:hover{
+    opacity: 0.75;
+  }
+
   img{
   width: 100%;
   height: auto;
 }
 
-  @media (max-width: 768px) {
-    flex-flow: column nowrap;
-    background-color: whitesmoke;
-    position: fixed;
-    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 100px;
-    padding-top: 3.5rem;
-
-
-    .top-li{
-    margin-top: 20px;
-    
-
-  }
+ 
   }
 `;
 
@@ -106,7 +94,7 @@ background: #bf6066;
     }
     h2 {
       font-size: 22px;
-      line-height: 40px;
+
 
    
     
