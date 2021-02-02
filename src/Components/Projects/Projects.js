@@ -144,7 +144,7 @@ function Projects() {
       <Container>
         <Row className="justify-content-center" s={12} xl={12}>
           <Col className="justify-content-center" s={12} xl={12}>
-            <h1>PROJECTS</h1>
+            <h1>PORTFOLIO</h1>
           </Col>
         </Row>
 

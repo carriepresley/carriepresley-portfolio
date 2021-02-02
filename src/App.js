@@ -13,7 +13,7 @@ import { Row } from "react-bootstrap";
 import { CgSun } from "react-icons/cg";
 import { HiMoon } from "react-icons/hi";
 import "./index.css";
-
+import NavBar from './Components/NavBar/NavBar'
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
@@ -41,11 +41,6 @@ const StyledApp = styled.div`
 
 `;
 
-
-
-
-
-
 function App() {
   const [theme, setTheme] = useState("light");
 
@@ -59,23 +54,21 @@ function App() {
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
       <StyledApp>
-     
-       
+        <NavBar />
+
         <Container>
           <Row className="dark-toggle" md={12}>
             <div onClick={themeToggler}>{icon}</div>
           </Row>
         </Container>
 
-        <AboutMe/>
+        <AboutMe />
         <div
           data-aos="fade-up"
           data-aos-delay="50"
           data-aos-duration="2000"
           data-aos-easing="fade-in-out"
-        >
-         
-        </div>
+        ></div>
 
         <YouTube />
 
@@ -88,9 +81,8 @@ function App() {
           <Projects />
         </div>
 
-        
-          <ContactMe />
-        
+        <ContactMe />
+
         <Footer />
       </StyledApp>
     </ThemeProvider>
