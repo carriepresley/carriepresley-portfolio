@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import styled from "styled-components";
-import Paper from "./papery.png";
+import Paper from "./paper.png";
 import YouTubeVid from "./YouTubeVid";
 
 const StyledAboutMe = styled.div`
@@ -15,6 +15,7 @@ const StyledAboutMe = styled.div`
   background-image: url(${Paper});
  background-size: cover;
 
+
   h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
@@ -25,6 +26,8 @@ const StyledAboutMe = styled.div`
     letter-spacing: 1px;
     color: black !important;
   margin-left: 40px;
+
+
 
    
   }
@@ -39,7 +42,7 @@ const StyledAboutMe = styled.div`
       line-height: 40px;
       padding: 20px 0px;
     }
-    padding-top: 0px;
+    padding-top: 10px;
     padding-bottom: 0px;
   }
 
@@ -91,6 +94,7 @@ function YouTube() {
   return (
     <StyledAboutMe>
       <Container fluid={true}>
+      <div className = "pseudo"></div>
         <Row className="justify-content-center" md={12} id="youtube-row">
           <Col md={6} xl={6}>
             <h2>

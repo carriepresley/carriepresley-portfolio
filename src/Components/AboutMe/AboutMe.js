@@ -32,7 +32,7 @@ const StyledAboutMe = styled.div`
     }
 
     @media (max-width: 768px){
-      padding-top: 10px;
+      padding-top: 0px;
       padding-bottom: 0px;
 
     }

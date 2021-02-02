@@ -23,7 +23,7 @@ img{
   
   h1 {
     font-family: "Montserrat", sans-serif;
-    font-weight: bolder;
+    font-weight: 600;
     font-size: 50px;
     letter-spacing: 1px;
     
@@ -34,6 +34,7 @@ img{
     line-height: 70px;
     font-weight: lighter;
     letter-spacing: 0.5px;
+   
   }
 
   @media (max-width: 768px) {

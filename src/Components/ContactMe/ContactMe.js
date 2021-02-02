@@ -7,7 +7,7 @@ import { Col } from "react-bootstrap";
 import Twitter from "./twitter.png";
 import Insta from "./insta.png";
 import LinkedIn from "./linkedin.png";
-
+import Cardboard from "./cardib.png";
 
 
 const Ul = styled.ul`
@@ -15,6 +15,7 @@ const Ul = styled.ul`
   display: flex;
   justify-content: center;
  
+
 
   
 
@@ -69,7 +70,8 @@ const StyledContactMe = styled.div`
   font-family: "Montserrat", sans-serif;
   letter-spacing: 3px;
 
-
+  background-image: url(${Cardboard});
+ background-size: cover;
 
 
 
