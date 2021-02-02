@@ -18,8 +18,9 @@ const StyledAboutMe = styled.div`
 
   h2 {
     font-family: "Montserrat", sans-serif;
-    font-size: 30px;
+    font-size: 35px;
     line-height: 50px;
+    font-weight: 600;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     min-height: 100%;

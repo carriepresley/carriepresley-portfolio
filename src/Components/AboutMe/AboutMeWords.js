@@ -32,9 +32,15 @@ img{
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
     line-height: 70px;
-    font-weight: lighter;
     letter-spacing: 0.5px;
    
+  }
+  .about-me{
+    background-color: #ffdc51;
+    padding: 100px 30px 20px 30px;
+    margin-top: -100px;
+    color: black !important;
+    border-radius: 7px;
   }
 
   @media (max-width: 768px) {
@@ -66,7 +72,7 @@ function AboutMeWords() {
     </div>
       
       
-    <div> <h2>
+    <div className = "about-me"> <h2>
         I'm a self-taught software developer who loves creating things,
         educating humans, and dancing to old-school hip hop.
       </h2></div>
