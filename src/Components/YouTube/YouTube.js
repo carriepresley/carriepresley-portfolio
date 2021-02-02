@@ -11,7 +11,7 @@ const StyledAboutMe = styled.div`
   align-items: center;
   justify-content: center;
  padding: 10px;
- background-color: #5d5d61;
+ background-color: #202020;
  
 
 
