@@ -14,8 +14,7 @@ const StyledCard = styled.div`
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
     transition: box-shadow 0.5s;
     will-change: transform;
-   
-   
+  
     
     box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
 
@@ -23,7 +22,11 @@ const StyledCard = styled.div`
       z-index: -1;
       margin-top: 50px;
       position: relative;
+     
+      
     }
+
+   
   }
 
   .card-floating:hover {

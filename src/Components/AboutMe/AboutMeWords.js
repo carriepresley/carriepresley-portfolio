@@ -12,8 +12,10 @@ const StyledAboutMeWords = styled.div`
 
 
 img{
-  width: 100%;
+  width: 55%;
   height: auto;
+  margin: -40px;
+
 }
   
 
@@ -36,9 +38,9 @@ img{
    
   }
   .about-me{
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
     padding: 100px 30px 20px 30px;
-    margin-top: -100px;
+    margin-top: -30px;
     color: black !important;
     border-radius: 7px;
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
@@ -56,10 +58,13 @@ img{
       line-height: 30px;
     }
     img{
-      margin-top: -70px;
+      margin-top: -100px;
+      width: 100%;
       
     }
-    
+    .about-me{
+      padding-top: 60px;
+    }
   }
 `;
 
