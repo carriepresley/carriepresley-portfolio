@@ -36,11 +36,14 @@ img{
    
   }
   .about-me{
-    background-color: #ffdc51;
+    background-color: #ffdf6c;
     padding: 100px 30px 20px 30px;
     margin-top: -100px;
     color: black !important;
     border-radius: 7px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
+  
   }
 
   @media (max-width: 768px) {
@@ -54,6 +57,7 @@ img{
     }
     img{
       margin-top: -60px;
+      
     }
     
   }
