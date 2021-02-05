@@ -58,7 +58,7 @@ img{
       line-height: 30px;
     }
     img{
-      margin-top: -100px;
+      margin-top: -120px;
       width: 100%;
       
     }

@@ -8,7 +8,7 @@ import styled from "styled-components";
 
 const StyledAboutMe = styled.div`
     padding: 0px;
-    padding-top: 100px;
+    padding-top: 90px;
     padding-bottom: 100px;
    
     
@@ -35,6 +35,7 @@ const StyledAboutMe = styled.div`
     @media (max-width: 768px){
       padding-top: 20px;
       padding-bottom: 0px;
+      padding-top: 20px;
 
     }
     
