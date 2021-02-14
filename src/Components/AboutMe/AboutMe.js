@@ -44,10 +44,9 @@ const StyledAboutMe = styled.div`
       padding-top: 20px;
 
       .pic{
-        margin-top: 0px;
-     transform: rotate(0deg);
-     width: 100vw;
+        width: 200px;
      height: auto;
+     margin-top:0px;
    }
 
     }

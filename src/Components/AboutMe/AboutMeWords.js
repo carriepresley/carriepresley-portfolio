@@ -54,7 +54,7 @@ img{
     }
     h2 {
       padding-top: 10px;
-      font-size: 20px;
+      font-size: 14px;
       line-height: 30px;
     }
     img{
