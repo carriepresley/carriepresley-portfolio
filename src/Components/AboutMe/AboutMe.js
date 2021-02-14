@@ -46,8 +46,8 @@ const StyledAboutMe = styled.div`
       .pic{
         width: 300px;
      height: auto;
-     margin-top:0px;
-     transform: rotate(0deg);
+     margin-top:-30px;
+     transform: rotate(-5deg);
    }
 
 
@@ -60,7 +60,7 @@ const StyledAboutMe = styled.div`
         width: 300px;
      height: auto;
      margin-top:-30px;
-     transform: rotate(0deg);
+     transform: rotate(-5deg);
    }
 
    }

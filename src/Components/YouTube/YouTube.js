@@ -113,7 +113,7 @@ function YouTube() {
               >
                 YouTube
               </a>{" "}
-              as I share all things tech, cryptocurrency, and decentralized finance.
+              as I share my journey as a self-taught software developer and simplify all things DeFi.
               <br></br>
               <a 
               className = "btn btn-primary"

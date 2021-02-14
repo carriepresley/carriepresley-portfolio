@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import image1 from "./img0.jpg";
-import image2 from "./img2.jpg";
-import image3 from "./img3.jpg";
+import image1 from "./image1.jpg";
+import image2 from "./image2.jpg";
+import image3 from "./image3.jpg";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import { Container } from "react-bootstrap";
@@ -175,7 +175,7 @@ function Projects() {
               <div className="details">
                 <h2>
                   ACCOUNTING<br></br>
-                  <span>Providing strategic planning for your cryptocurrency assets</span>
+                  <span>Providing strategic planning for cryptocurrency assets</span>
                 </h2>
               </div>
             </div>
@@ -187,7 +187,7 @@ function Projects() {
               <div className="details">
                 <h2>
                   EDUCATION<br></br>
-                  <span>Presentating on the future of DeFi</span>
+                  <span>Communicating complex tech and DeFi topics in a simple and engaging way</span>
                 </h2>
               </div>
             </div>
