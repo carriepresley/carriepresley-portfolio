@@ -8,6 +8,10 @@ import { Col } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 
 const StyledProjects = styled.div`
+
+
+ 
+
   .body {
     margin: 0;
     padding: 0;
@@ -17,6 +21,8 @@ const StyledProjects = styled.div`
     -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   cursor: pointer;
+  
+  
 
     
   }
@@ -27,6 +33,7 @@ const StyledProjects = styled.div`
     grid-gap: 15px;
     margin: 0 auto;
     cursor: pointer;
+   
   }
   .card {
     position: relative;
@@ -55,6 +62,7 @@ const StyledProjects = styled.div`
   .card:hover:before {
     transform: rotate(20deg);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    
   }
   .card:hover:after {
     transform: rotate(10deg);
@@ -101,9 +109,14 @@ const StyledProjects = styled.div`
     font-size: 40px;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 3px;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     font-weight: 400;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    background-color: #cce9e7;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
     
     
   }
