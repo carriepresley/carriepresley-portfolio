@@ -20,6 +20,8 @@ AOS.init();
 
 const StyledApp = styled.div` 
   color: ${(props) => props.theme.fontColor};
+ 
+}
 
   .dark-toggle{
     float: right;
