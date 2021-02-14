@@ -16,6 +16,7 @@ img{
   margin: -50px;
   margin-top: -100px;
       width: 200px;
+      
 
 }
   
@@ -26,7 +27,7 @@ img{
   
   h1 {
     font-family: "Montserrat", sans-serif;
-    font-weight: 600;
+    
     font-size: 40px;
     letter-spacing: 1px;
     
@@ -37,6 +38,7 @@ img{
     line-height: 43px;
     letter-spacing: 0.5px;
    
+    font-weight: 400;
   }
   .about-me{
     background-color: #afb934;
@@ -55,7 +57,7 @@ img{
     }
     h2 {
       padding-top: 0px;
-      font-size: 16px;
+      font-size: 20px;
       line-height: 30px;
     }
     img{
@@ -66,12 +68,14 @@ img{
     }
     .about-me{
       padding-top: 60px;
+      
+     
     }
 
 
     @media (max-width: 480px){
       h2{
-        font-size: 16px;
+        font-size: 20px;
         padding-top: 0px;
         margin-top: -20px;
       }

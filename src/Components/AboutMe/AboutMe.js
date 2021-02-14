@@ -18,6 +18,7 @@ const StyledAboutMe = styled.div`
      height: auto;
      margin-top: -70px;
      transform: rotate(-10deg);
+     
    }
 
 
@@ -48,6 +49,7 @@ const StyledAboutMe = styled.div`
      height: auto;
      margin-top:-30px;
      transform: rotate(-5deg);
+     
    }
 
 
@@ -75,7 +77,12 @@ function AboutMe() {
       <Container fluid={true}>
         <Row className="justify-content-center" >
           <Col className="justify-content-center" >
+          <div
+      data-aos="fade-right"
+          data-aos-delay="20"
+          data-aos-duration="1000">
           <img src = {pic} className = "pic"></img>
+          </div>
           </Col>
           <Col
             className="d-flex justify-content-center"

@@ -12,6 +12,8 @@ const StyledAboutMe = styled.div`
   justify-content: center;
  padding: 10px;
  background-color: #c17718;
+ box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
  
 
 
@@ -19,6 +21,7 @@ const StyledAboutMe = styled.div`
     font-family: "Montserrat", sans-serif;
     font-size: 25px;
     line-height: 50px;
+    font-weight: 400;
     
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -40,6 +43,7 @@ const StyledAboutMe = styled.div`
       font-size: 22px;
       line-height: 40px;
       padding: 20px 0px;
+      font-weight: 400;
     }
   padding: 0px;
   }
@@ -47,6 +51,7 @@ const StyledAboutMe = styled.div`
   @media (max-width: 480px){
     h2 {
       font-size: 18px;
+      font-weight: 400;
     }
 
   }

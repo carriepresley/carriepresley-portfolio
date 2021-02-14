@@ -87,6 +87,7 @@ const StyledProjects = styled.div`
 
   .details {
     font-family: "Montserrat", sans-serif;
+    font-weight: 400;
     font-size: 30px;
     line-height: 50px;
     -webkit-font-smoothing: antialiased;
@@ -102,6 +103,7 @@ const StyledProjects = styled.div`
     letter-spacing: 3px;
     padding-bottom: 50px;
     padding-top: 50px;
+    font-weight: 400;
     
     
   }
@@ -109,6 +111,7 @@ const StyledProjects = styled.div`
     font-size: 18px;
     margin: 0;
     padding: 0;
+    font-weight: 400;
 
    
    
@@ -129,7 +132,7 @@ const StyledProjects = styled.div`
 
   .card .details h2 span {
     line-height: 16px;
-   
+    font-weight: 400;
     font-size: 12px;
     display: block;
     margin-top: 2px;

@@ -22,6 +22,7 @@ const Ul = styled.ul`
   li {
     padding: 10px 40px;
     
+    
   .top-li{
   
     width: 33px;
@@ -67,7 +68,10 @@ const StyledContactMe = styled.div`
     color: white;
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
+    font-weight: 400;
 background: #034387;
+box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
 
   }
 
@@ -86,6 +90,18 @@ background: #034387;
     -moz-osx-font-smoothing: grayscale;
     min-height: 100%;
     letter-spacing: 1px;
+    
+ 
+  }
+
+  p{
+    background-color: #c17718;
+    font-size: 20px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
+padding: 10px;
+color: white !important;
+width: 100vwh;
   }
   
   @media (max-width: 768px) {
@@ -94,6 +110,7 @@ background: #034387;
     }
     h2 {
       font-size: 22px;
+    
 
 
    
@@ -134,10 +151,11 @@ function ContactForm() {
       <Container >
         <Row className="justify-content-center" s={12} xl={12}>
           <Col className="justify-content-center" s={12} xl={12}>
-          
-          <h1 >CONTACT ME</h1>
+          <div className = "header">
+          <h1>CONTACT ME</h1>
+          <a href = "mailto: carriepresley@hey.com"><p>carriepresley@hey.com</p></a>
   
-         
+          </div>
        
         
             
@@ -147,7 +165,10 @@ function ContactForm() {
           <Col>
          
 
-
+          <div
+      data-aos="fade-right"
+          data-aos-delay="20"
+          data-aos-duration="1000">
           <Ul>
       <li >
         <a
@@ -182,6 +203,7 @@ function ContactForm() {
         </a>
       </li>
     </Ul>
+    </div>
           </Col>
         </Row>
         
