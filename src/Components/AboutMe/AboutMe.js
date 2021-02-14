@@ -50,6 +50,20 @@ const StyledAboutMe = styled.div`
      transform: rotate(0deg);
    }
 
+
+   @media (max-width: 480px){
+    padding-top: 20px;
+      padding-bottom: 0px;
+      padding-top: 20px;
+
+      .pic{
+        width: 230px;
+     height: auto;
+     margin-top:-30px;
+     transform: rotate(0deg);
+   }
+
+   }
     }
     
 

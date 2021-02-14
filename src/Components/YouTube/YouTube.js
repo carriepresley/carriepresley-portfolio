@@ -44,6 +44,13 @@ const StyledAboutMe = styled.div`
   padding: 0px;
   }
 
+  @media (max-width: 480px){
+    h2 {
+      font-size: 18px;
+    }
+
+  }
+
   #youtube-row {
     margin: 100px 20px 100px 20px;
     

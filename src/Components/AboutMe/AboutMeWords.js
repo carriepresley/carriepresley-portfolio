@@ -54,16 +54,25 @@ img{
     }
     h2 {
       padding-top: 10px;
-      font-size: 14px;
+      font-size: 16px;
       line-height: 30px;
     }
     img{
       margin-top: -120px;
-      width: 100%;
+      width: 90%;
       
     }
     .about-me{
       padding-top: 60px;
+    }
+
+
+    @media (max-width: 480px){
+      h2{
+        font-size: 14px;
+        padding-top: 0px;
+        margin-top: -20px;
+      }
     }
   }
 `;
