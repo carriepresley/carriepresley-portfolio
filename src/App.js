@@ -5,7 +5,7 @@ import YouTube from "./Components/YouTube/YouTube";
 import Projects from "./Components/Projects/Projects";
 import ContactMe from "./Components/ContactMe/ContactMe";
 import Footer from "./Components/Footer/Footer";
-
+import NavBar from "./Components/NavBar/NavBar"
 import styled, { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "./themes.js";
 import { Container } from "react-bootstrap";
@@ -13,7 +13,7 @@ import { Row } from "react-bootstrap";
 import { CgSun } from "react-icons/cg";
 import { HiMoon } from "react-icons/hi";
 import "./index.css";
-import NavBar from './Components/NavBar/NavBar'
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
@@ -56,7 +56,7 @@ function App() {
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyles />
       <StyledApp>
-        <NavBar />
+  <NavBar/>
 
         <Container>
           <Row className="dark-toggle" md={12}>

@@ -10,25 +10,20 @@ const Nav = styled.nav`
   justify-content: space-between;
   list-style: none;
   border-bottom: 1px solid grey;
-
-
 font-family: "Montserrat", sans-serif;
 font-size:20px;
 line-height: 50px;
 letter-spacing: 0.5px;
-
   .logo {
     
     font-size: 25px;
     line-height: 50px;
     letter-spacing: 0.5px;
   }
-
  ul{
    list-style-type: none;
    justify-content: center;
  }
-
   li {
     padding: 18px 20px;
     cursor: pointer;
@@ -42,10 +37,8 @@ letter-spacing: 0.5px;
   }
   a:hover {
     opacity: 0.8;
-
     transition: transform 0.7s ease-in-out;
   }
-
   @media (max-width: 768px) {
     ul{
       display: none;

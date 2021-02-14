@@ -16,6 +16,7 @@ const StyledProjects = styled.div`
     align-items: center;
     -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
 
     
   }
@@ -166,9 +167,10 @@ function Projects() {
               <div className="details">
                 <h2>
                   SOFTWARE DEVELOPMENT<br></br>
-                  <span className ="description">Developing financial solutions and streamlining systems</span>
+                  <span className ="description">Specializing in front-end software development with React </span>
                 </h2>
               </div>
+              
             </div>
 
             <div className="card">
@@ -178,7 +180,7 @@ function Projects() {
               <div className="details">
                 <h2>
                   ACCOUNTING<br></br>
-                  <span>Providing strategic planning for cryptocurrency assets</span>
+                  <span>Providing financial planning for cryptocurrency assets</span>
                 </h2>
               </div>
             </div>
@@ -189,8 +191,8 @@ function Projects() {
               </div>
               <div className="details">
                 <h2>
-                  EDUCATION<br></br>
-                  <span>Communicating complex tech and DeFi topics in a simple and engaging way</span>
+                  BRAND COLLAB<br></br>
+                  <span>Content creation with positive vibes and a positive ROI </span>
                 </h2>
               </div>
             </div>
