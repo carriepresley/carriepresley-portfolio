@@ -91,7 +91,7 @@ function AboutMeWords() {
       data-aos="fade-left"
           data-aos-delay="20"
           data-aos-duration="1000">
-            <img src = {Tape}></img>
+            <img src = "https://res.cloudinary.com/carriepresley/image/upload/c_scale,w_200/v1613331076/carriepresley/tapey_pbyddd.png"></img>
           </div>
     </div>
       
