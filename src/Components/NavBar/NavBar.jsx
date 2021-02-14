@@ -19,6 +19,7 @@ letter-spacing: 0.5px;
     font-size: 25px;
     line-height: 50px;
     letter-spacing: 0.5px;
+    text-decoration: line-through
   }
  ul{
    list-style-type: none;

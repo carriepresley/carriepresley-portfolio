@@ -14,7 +14,7 @@ const StyledProjects = styled.div`
 
   .body {
     margin: 0;
-    padding: 0;
+    padding-bottom: 60px;
     display: flex;
     justify-content: center;
     align-items: center;

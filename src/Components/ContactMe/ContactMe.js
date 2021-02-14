@@ -53,13 +53,15 @@ const Ul = styled.ul`
 
 const StyledContactMe = styled.div`
   text-align: center;
-  padding-top: 200px;
+  padding-top: 100px;
   padding-bottom: 100px;
   font-size: 50px;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 3px;
 
-  
+  background-color: #cce9e7;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
 
 
 
