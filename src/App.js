@@ -25,7 +25,7 @@ const StyledApp = styled.div`
     float: right;
     margin-top: 20px;
     padding-top: 20px;
-    margin-right: 20px;
+    margin-right: 10px;
     cursor: pointer;
     transition: ease-in-out  0.5s;
 
@@ -34,7 +34,9 @@ const StyledApp = styled.div`
     @media (max-width: 768px) {
    
     margin-top: 0px;
-    margin-right:20px;
+    margin-right: 0px;
+
+  
     
   }
  

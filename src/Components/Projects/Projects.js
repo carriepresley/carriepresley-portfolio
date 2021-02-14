@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import image1 from "./img1.jpg";
+import image1 from "./img0.jpg";
 import image2 from "./img2.jpg";
 import image3 from "./img3.jpg";
 import { Row } from "react-bootstrap";
@@ -31,7 +31,7 @@ const StyledProjects = styled.div`
     position: relative;
     width: 300px;
     height: 350px;
-    background:  whitesmoke;
+    background:  #cdeae7;
     margin: 0 auto;
     border-radius: 4px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -103,13 +103,15 @@ const StyledProjects = styled.div`
     
   }
   h2 {
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
     padding: 0;
+
    
    
     color: black !important;
   }
+
 
   .card .details {
     position: absolute;
@@ -122,11 +124,11 @@ const StyledProjects = styled.div`
   }
 
   .card .details h2 span {
-    line-height: 30px;
+    line-height: 16px;
    
-    font-size: 16px;
+    font-size: 12px;
     display: block;
-    margin-top: -5px;
+    margin-top: 2px;
   }
 
   @media (max-width: 768px) {
@@ -148,7 +150,7 @@ function Projects() {
       <Container>
         <Row className="justify-content-center" s={12} xl={12}>
           <Col className="justify-content-center" s={12} xl={12}>
-            <h1>PORTFOLIO</h1>
+            <h1>SERVICES</h1>
           </Col>
         </Row>
 
@@ -160,8 +162,8 @@ function Projects() {
               </div>
               <div className="details">
                 <h2>
-                  Project 1<br></br>
-                  <span>More info</span>
+                  SOFTWARE DEVELOPMENT<br></br>
+                  <span className ="description">Developing financial solutions and streamlining systems</span>
                 </h2>
               </div>
             </div>
@@ -172,8 +174,8 @@ function Projects() {
               </div>
               <div className="details">
                 <h2>
-                  Project 2<br></br>
-                  <span>More info</span>
+                  ACCOUNTING<br></br>
+                  <span>Providing strategic planning for your cryptocurrency assets</span>
                 </h2>
               </div>
             </div>
@@ -184,8 +186,8 @@ function Projects() {
               </div>
               <div className="details">
                 <h2>
-                  Project 3<br></br>
-                  <span>More info</span>
+                  EDUCATION<br></br>
+                  <span>Presentating on the future of DeFi</span>
                 </h2>
               </div>
             </div>

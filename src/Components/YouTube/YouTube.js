@@ -11,7 +11,7 @@ const StyledAboutMe = styled.div`
   align-items: center;
   justify-content: center;
  padding: 10px;
- background-color: #202020;
+ background-color: #c17718;
  
 
 
@@ -46,6 +46,7 @@ const StyledAboutMe = styled.div`
 
   #youtube-row {
     margin: 100px 20px 100px 20px;
+    
   }
   #darkmode-toggle {
     margin: 0px 2px 0px 0px;
@@ -60,7 +61,7 @@ const StyledAboutMe = styled.div`
   }
 
   .YouTube {
-    color: #bf6066;
+    color: #034387;
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
@@ -70,7 +71,7 @@ const StyledAboutMe = styled.div`
     border-style: none;
     color: white;
     font-weight: bold;
-    background-color: #bf6066;
+    background-color: #034387;
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
     border-radius: 5px;
@@ -105,8 +106,7 @@ function YouTube() {
               >
                 YouTube
               </a>{" "}
-              as I share my journey through tech, tutorials, and simple explanations
-              to math and programming topics!
+              as I share all things tech, cryptocurrency, and decentralized finance.
               <br></br>
               <a 
               className = "btn btn-primary"

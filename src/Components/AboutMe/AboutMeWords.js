@@ -14,7 +14,7 @@ const StyledAboutMeWords = styled.div`
 img{
   width: 55%;
   height: auto;
-  margin: -40px;
+  margin: -50px;
 
 }
   
@@ -26,23 +26,23 @@ img{
   h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    font-size: 50px;
+    font-size: 40px;
     letter-spacing: 1px;
     
   }
   h2 {
     font-family: "Montserrat", sans-serif;
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 24px;
+    line-height: 43px;
     letter-spacing: 0.5px;
    
   }
   .about-me{
-    background-color: #f5f5f5;
+    background-color: #afb934;
     padding: 100px 30px 20px 30px;
     margin-top: -30px;
     color: black !important;
-    border-radius: 7px;
+    border-radius: 0px;
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
     transition: box-shadow 0.5s;
   
@@ -80,10 +80,9 @@ function AboutMeWords() {
           </div>
     </div>
       
-      
+
     <div className = "about-me"> <h2>
-        I'm a self-taught software developer who loves creating things,
-        educating humans, and dancing to old-school hip hop.
+        As a software developer & accountant, I'm learning and educating others about the future of #DeFi
       </h2></div>
      
     </StyledAboutMeWords>

@@ -67,7 +67,7 @@ const StyledContactMe = styled.div`
     color: white;
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
-background: #bf6066;
+background: #034387;
 
   }
 

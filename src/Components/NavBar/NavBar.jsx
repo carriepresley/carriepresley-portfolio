@@ -59,8 +59,9 @@ const Navbar = () => {
       <div className="logo">CARRIE PRESLEY</div>
       <div>
         <ul>
+       
           <li>
-            <a href="#portfolio">PORTFOLIO</a>
+            <a href="#portfolio">SERVICES</a>
           </li>
           <li>
             <a href="#contactme">CONTACT</a>

@@ -1,18 +1,24 @@
 import React from "react";
-import Card from "./Card";
 import AboutMeWords from "./AboutMeWords";
 import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import styled from "styled-components";
+import pic from "./img1.png"
 
 const StyledAboutMe = styled.div`
     padding: 0px;
     padding-top: 90px;
     padding-bottom: 100px;
+  
    
     
-   
+   .pic{
+     width: 400px;
+     height: auto;
+     margin-top: -70px;
+     transform: rotate(-10deg);
+   }
 
 
    
@@ -37,6 +43,11 @@ const StyledAboutMe = styled.div`
       padding-bottom: 0px;
       padding-top: 20px;
 
+      .pic{
+        margin-top: -40px;
+     transform: rotate(0deg);
+   }
+
     }
     
 
@@ -46,15 +57,14 @@ function AboutMe() {
   return (
     <StyledAboutMe>
       <Container fluid={true}>
-        <Row className="justify-content-center" md={12}>
-          <Col className="d-flex justify-content-center" md={6} xl={4}>
-            <Card />
+        <Row className="justify-content-center" >
+          <Col className="d-flex justify-content-center" >
+          <img src = {pic} className = "pic"></img>
           </Col>
           <Col
             className="d-flex justify-content-center"
             id="text-right"
-            md={6}
-            xl={7}
+            
           >
             <AboutMeWords />
           </Col>
