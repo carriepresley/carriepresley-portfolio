@@ -22,7 +22,7 @@ const StyledAboutMe = styled.div`
     font-size: 25px;
     line-height: 50px;
     font-weight: 400;
-    
+    color: white !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     min-height: 100%;
