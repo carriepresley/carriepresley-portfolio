@@ -117,6 +117,7 @@ const StyledProjects = styled.div`
     background-color: #cce9e7;
     box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
     transition: box-shadow 0.5s;
+    color: black !important;
     
     
   }
