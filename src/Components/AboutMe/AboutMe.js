@@ -44,9 +44,10 @@ const StyledAboutMe = styled.div`
       padding-top: 20px;
 
       .pic{
-        width: 200px;
+        width: 300px;
      height: auto;
      margin-top:0px;
+     transform: rotate(0deg);
    }
 
     }
@@ -59,7 +60,7 @@ function AboutMe() {
     <StyledAboutMe>
       <Container fluid={true}>
         <Row className="justify-content-center" >
-          <Col className="d-flex justify-content-center" >
+          <Col className="justify-content-center" >
           <img src = {pic} className = "pic"></img>
           </Col>
           <Col

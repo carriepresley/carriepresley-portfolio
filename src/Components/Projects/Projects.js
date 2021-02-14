@@ -31,7 +31,7 @@ const StyledProjects = styled.div`
     position: relative;
     width: 300px;
     height: 350px;
-    background:  #cdeae7;
+    background:  whitesmoke;
     margin: 0 auto;
     border-radius: 4px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
