@@ -81,7 +81,7 @@ function AboutMe() {
       data-aos="fade-right"
           data-aos-delay="20"
           data-aos-duration="1000">
-          <img src = {pic} className = "pic"></img>
+          <img src = "https://res.cloudinary.com/carriepresley/image/upload/c_scale,w_400/v1613330757/carriepresley/img1_mjtpdm.png" className = "pic"></img>
           </div>
           </Col>
           <Col
