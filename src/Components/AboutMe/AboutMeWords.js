@@ -60,6 +60,7 @@ img{
     }
     img{
       margin-top: -100px;
+      margin-left: 1px;
       width: 200px;
       
     }
@@ -70,7 +71,7 @@ img{
 
     @media (max-width: 480px){
       h2{
-        font-size: 14px;
+        font-size: 16px;
         padding-top: 0px;
         margin-top: -20px;
       }

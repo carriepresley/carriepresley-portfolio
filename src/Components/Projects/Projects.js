@@ -92,6 +92,7 @@ const StyledProjects = styled.div`
     -moz-osx-font-smoothing: grayscale;
     letter-spacing: 1px;
     color: black !important;
+    
   }
   h1 {
     text-align: center;
@@ -100,6 +101,7 @@ const StyledProjects = styled.div`
     letter-spacing: 3px;
     padding-bottom: 50px;
     padding-top: 50px;
+    
     
   }
   h2 {
@@ -121,6 +123,7 @@ const StyledProjects = styled.div`
     height: 60px;
     text-align: center;
     display: block;
+    
   }
 
   .card .details h2 span {
